@@ -137,6 +137,30 @@
   .section-label{ font-size: 12.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--slate); }
   .section-head h2{ font-size: clamp(25px, 3.4vw, 34px); margin-top: 10px; }
 
+  /* ---------- New Month greeting (remove the section in December) ---------- */
+  .newmonth{ background: var(--ink-2); }
+  .newmonth .wrap{ display: grid; grid-template-columns: 0.75fr 1.25fr; gap: 56px; align-items: center; }
+  .newmonth-poster{ border-radius: 4px; overflow: hidden; border: 1px solid var(--line-bright); max-width: 420px; }
+  .newmonth-poster img{ width: 100%; height: auto; }
+  .newmonth h2{ font-size: clamp(30px, 4.6vw, 46px); line-height: 1.1; max-width: 14ch; }
+  .newmonth h2 em{ color: var(--gold-bright); font-style: normal; }
+  .newmonth p{ margin-top: 18px; color: var(--slate); font-size: 16.5px; max-width: 46ch; }
+  @media (max-width: 780px){
+    .newmonth .wrap{ grid-template-columns: 1fr; gap: 32px; }
+    .newmonth-poster{ margin: 0 auto; }
+  }
+
+  /* ---------- Intro video ---------- */
+  .intro-section .wrap{ display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center; }
+  .intro-section h2{ font-size: clamp(25px, 3.4vw, 34px); margin-top: 10px; }
+  .intro-section p{ color: var(--slate); margin-top: 18px; max-width: 48ch; font-size: 16px; }
+  .intro-video{ justify-self: center; width: 100%; max-width: 300px; border-radius: 4px; overflow: hidden; border: 1px solid var(--line-bright); background: #000; }
+  .intro-video video{ display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; background: #000; }
+  .intro-video a{ color: var(--gold-bright); text-decoration: underline; }
+  @media (max-width: 780px){
+    .intro-section .wrap{ grid-template-columns: 1fr; gap: 32px; }
+  }
+
   /* ---------- About ---------- */
   .about-grid{ display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 52px; }
   @media (max-width: 780px){ .about-grid{ grid-template-columns: 1fr; } }
@@ -292,6 +316,42 @@
     </div>
   </section>
 
+  <section id="new-month" class="newmonth">
+    <div class="wrap">
+      <div class="newmonth-poster">
+        <img src="images/november-2026.jpg" width="1080" height="1080" alt="Welcome to November: your month of divine increase and overflow. Apostle Imani" loading="lazy">
+      </div>
+      <div>
+        <div class="eyebrow">November 2026</div>
+        <h2>Happy New Month, <em>welcome to November!</em></h2>
+        <p>This is your month of divine increase and overflow. Step into it with faith, and let us pray and believe together.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#prayer">Request Prayer</a>
+        </div>
+        <div class="testimony-sign">~ Apostle Imani</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="intro" class="intro-section">
+    <div class="wrap">
+      <div>
+        <div class="section-label">The Intro</div>
+        <h2>Meet Apostle Imani</h2>
+        <p>Watch the Apostle Imani intro: the message of salvation carried from Dar es Salaam to Manila, and on to the nations.</p>
+        <div class="cta-row">
+          <a class="btn btn-line" href="https://youtube.com/@apostleimani" target="_blank" rel="noopener">Follow on YouTube</a>
+        </div>
+      </div>
+      <div class="intro-video">
+        <video controls playsinline preload="metadata" poster="images/intro-poster.jpg" aria-label="Apostle Imani intro video">
+          <source src="videos/apostle-imani-intro.mp4" type="video/mp4">
+          Your browser does not support video. <a href="videos/apostle-imani-intro.mp4">Download the intro video</a>.
+        </video>
+      </div>
+    </div>
+  </section>
+
   <section id="about">
     <div class="wrap">
       <div class="about-grid">
@@ -304,7 +364,7 @@
         </div>
         <div class="about-body">
           <div class="section-label">About Apostle Imani</div>
-          <p style="margin-top:14px;">Apostle Imani is a Christian author, prophet, and missionary evangelist who founded Apostle Imani Ministries in Dar es Salaam in 2020. He serves as General Secretary on the Board of Trustees and Directors of World Revival Ministries, holds a Pastoral Certificate from Berea Bible College, and is completing a Bachelor of Theology in Christian Leadership and Community Development at Action Training Institute.</p>
+          <p style="margin-top:14px;">Apostle Imani is a Christian author, prophet, and missionary evangelist who founded Apostle Imani Ministries in Dar es Salaam in 2018. He serves as General Secretary on the Board of Trustees and Directors of World Revival Ministries, holds a Pastoral Certificate from Berea Bible College, and is completing a Bachelor of Theology in Christian Leadership and Community Development at Action Training Institute.</p>
           <p>He now leads the ministry from the Philippines, preaching faith, salvation, and revival to congregations and online audiences across both nations, and authoring works that call believers deeper into their walk with Christ.</p>
           <blockquote>
             "Go into all the world and preach the gospel to every creature."
