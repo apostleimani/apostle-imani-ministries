@@ -10,8 +10,11 @@
 <meta property="og:description" content="Partner with Apostle Imani Ministries in proclaiming the Gospel.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://apostleimani.org/give.html">
-<meta property="og:image" content="https://apostleimani.org/images/FB_IMG_1794042990053.jpg">
+<meta property="og:image" content="https://apostleimani.org/images/og-image.jpg">
 <link rel="canonical" href="https://apostleimani.org/give.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <style>
 :root {
   --purple:#211438;
@@ -593,10 +596,12 @@ footer .copyright {
   }
 }
 
-/* GIVING PAGE */
-.page-hero{ background:linear-gradient(120deg,var(--purple-dark),var(--purple-light)); color:white; text-align:center; padding:80px 20px 70px; }
-.page-hero h1{ font-size:clamp(32px,6vw,56px); line-height:1.15; margin:18px 0; font-weight:800; }
-.page-hero p{ color:#eee8f4; max-width:700px; margin:0 auto; font-size:17px; }
+/* GIVING PAGE (styles for the original giving section classes) */
+.payments-section .wrap{ width:min(1120px,92%); margin:auto; }
+.payments-section .section-head{ text-align:center; margin-bottom:34px; }
+.payments-section .section-head .eyebrow{ color:#8a641d; letter-spacing:4px; font-size:13px; font-weight:bold; }
+.payments-section .section-head h2{ color:var(--purple); font-size:clamp(27px,4vw,39px); line-height:1.2; margin:10px 0 14px; }
+.payments-section .section-head p{ color:var(--muted); max-width:700px; margin:0 auto; }
 .payment-heading{ color:var(--purple); font-size:22px; margin:40px 0 18px; }
 .payment-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:22px; }
 .payment-card{ background:white; border-radius:15px; padding:26px; box-shadow:var(--shadow); border-bottom:4px solid var(--gold); display:flex; flex-direction:column; }
@@ -604,13 +609,11 @@ footer .copyright {
 .payment-card h3{ color:var(--purple); font-size:19px; margin-bottom:12px; }
 .payment-card p{ color:var(--muted); font-size:15px; margin:0 0 6px; overflow-wrap:anywhere; }
 .payment-card p strong{ color:var(--text); }
-.payment-card button{ margin-top:auto; align-self:flex-start; cursor:pointer; min-height:44px; margin:16px 0 0; }
+.payment-card button{ margin-top:auto; align-self:flex-start; min-height:44px; margin:16px 0 0; padding:12px 22px; background:var(--gold); color:var(--purple-dark); border:1px solid var(--gold); border-radius:30px; font-weight:bold; font-size:14px; cursor:pointer; transition:.25s; }
+.payment-card button:hover{ transform:translateY(-3px); box-shadow:0 7px 18px #0003; }
 .payment-notice{ margin-top:40px; padding:24px 26px; background:white; border-left:5px solid var(--gold); border-radius:13px; box-shadow:var(--shadow); max-width:800px; }
 .payment-notice strong{ color:var(--purple); font-size:17px; }
 .payment-notice p{ color:var(--muted); font-size:15px; margin-top:10px; }
-.back-link{ text-align:center; padding:10px 0 50px; }
-.back-link a{ color:#8a641d; font-weight:bold; }
-button.btn{ font-family:inherit; cursor:pointer; }
 </style>
 </head>
 <body>
@@ -623,94 +626,121 @@ button.btn{ font-family:inherit; cursor:pointer; }
     </a>
     <div class="nav-area">
       <nav>
-        <a href="index.html#home" data-en="Home" data-sw="Mwanzo">Home</a>
-        <a href="index.html#about" data-en="About" data-sw="Kuhusu Sisi">About</a>
-        <a href="index.html#vision" data-en="Our Vision" data-sw="Maono Yetu">Our Vision</a>
-        <a href="index.html#ministries" data-en="Ministries" data-sw="Huduma">Ministries</a>
-        <a href="index.html#faith" data-en="Faith" data-sw="Imani">Faith</a>
-        <a href="index.html#books" data-en="Books" data-sw="Vitabu">Books</a>
-        <a href="index.html#media" data-en="Media" data-sw="Habari">Media</a>
-        <a href="index.html#contact" data-en="Contact" data-sw="Mawasiliano">Contact</a>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#vision">Our Vision</a>
+        <a href="index.html#ministries">Ministries</a>
+        <a href="index.html#faith">Faith</a>
+        <a href="index.html#books">Books</a>
+        <a href="index.html#media">Media</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
-      <button class="language-button" id="languageButton" type="button" onclick="toggleLanguage()">Kiswahili</button>
     </div>
   </div>
 </header>
 
 <main>
 
-<section class="page-hero">
-  <div class="hero-label"><span data-en="SUPPORT THE MINISTRY" data-sw="UNGA MKONO HUDUMA">SUPPORT THE MINISTRY</span></div>
-  <h1 data-en="Giving &amp; Partnership" data-sw="Utoaji na Ushirikiano">Giving &amp; Partnership</h1>
-  <p data-en="Partner with Apostle Imani Ministries through any of the verified payment options below." data-sw="Shirikiana na Apostle Imani Ministries kupitia njia yoyote ya malipo iliyothibitishwa hapa chini.">Partner with Apostle Imani Ministries through any of the verified payment options below.</p>
-</section>
-
-<section id="donate">
-  <div class="container">
-
-    <h2 class="section-heading" data-en="Choose Your Giving Option" data-sw="Chagua Njia Yako ya Kutoa">Choose Your Giving Option</h2>
-
-    <h3 class="payment-heading" data-en="Tanzania Giving Options" data-sw="Njia za Kutoa Tanzania">Tanzania Giving Options</h3>
-    <div class="payment-grid">
-      <article class="payment-card">
-        <img src="images/payments/nbc.png" alt="NBC Bank" loading="lazy" onerror="this.style.display='none'">
-        <h3 data-en="National Bank of Commerce (NBC)" data-sw="Benki ya Taifa ya Biashara (NBC)">National Bank of Commerce (NBC)</h3>
-        <p><strong data-en="Account Name:" data-sw="Jina la Akaunti:">Account Name:</strong> Julius Constantine Mushi</p>
-        <p><strong data-en="Account Number:" data-sw="Namba ya Akaunti:">Account Number:</strong> 030174090309</p>
-        <p><strong data-en="SWIFT Code:" data-sw="Msimbo wa SWIFT:">SWIFT Code:</strong> NLCBTZTX</p>
-        <button type="button" class="btn" data-en="Copy Account Number" data-sw="Nakili Namba ya Akaunti" onclick="copyText('030174090309',this)">Copy Account Number</button>
-      </article>
-      <article class="payment-card">
-        <img src="images/payments/mpesa.png" alt="Vodacom M-PESA" loading="lazy" onerror="this.style.display='none'">
-        <h3 data-en="Vodacom (M-PESA)" data-sw="Vodacom (M-PESA)">Vodacom (M-PESA)</h3>
-        <p><strong data-en="Registered Name:" data-sw="Jina Lililosajiliwa:">Registered Name:</strong> Julius Constantine Mushi</p>
-        <p><strong data-en="Number:" data-sw="Namba:">Number:</strong> +255749256665</p>
-        <button type="button" class="btn" data-en="Copy Number" data-sw="Nakili Namba" onclick="copyText('+255749256665',this)">Copy Number</button>
-      </article>
-      <article class="payment-card">
-        <img src="images/payments/airtel.png" alt="Airtel Money" loading="lazy" onerror="this.style.display='none'">
-        <h3 data-en="Airtel Money" data-sw="Airtel Money">Airtel Money</h3>
-        <p><strong data-en="Registered Name:" data-sw="Jina Lililosajiliwa:">Registered Name:</strong> Julius Constantine Mushi</p>
-        <p><strong data-en="Number:" data-sw="Namba:">Number:</strong> +255665955665</p>
-        <button type="button" class="btn" data-en="Copy Number" data-sw="Nakili Namba" onclick="copyText('+255665955665',this)">Copy Number</button>
-      </article>
-      <article class="payment-card">
-        <img src="images/payments/mixx.png" alt="Mixx by Yas" loading="lazy" onerror="this.style.display='none'">
-        <h3 data-en="Mixx by Yas" data-sw="Mixx by Yas">Mixx by Yas</h3>
-        <p><strong data-en="Registered Name:" data-sw="Jina Lililosajiliwa:">Registered Name:</strong> Julius Constantine Mushi</p>
-        <p><strong data-en="Number:" data-sw="Namba:">Number:</strong> +255776723665</p>
-        <button type="button" class="btn" data-en="Copy Number" data-sw="Nakili Namba" onclick="copyText('+255776723665',this)">Copy Number</button>
-      </article>
-      <article class="payment-card">
-        <img src="images/payments/halopesa.png" alt="HaloPesa" loading="lazy" onerror="this.style.display='none'">
-        <h3 data-en="HaloPesa" data-sw="HaloPesa">HaloPesa</h3>
-        <p><strong data-en="Registered Name:" data-sw="Jina Lililosajiliwa:">Registered Name:</strong> Julius Constantine Mushi</p>
-        <p><strong data-en="Number:" data-sw="Namba:">Number:</strong> +255626355244</p>
-        <button type="button" class="btn" data-en="Copy Number" data-sw="Nakili Namba" onclick="copyText('+255626355244',this)">Copy Number</button>
-      </article>
+<section id="donate" class="payments-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">SUPPORT THE MINISTRY</div>
+      <h2>Choose Your Giving Option</h2>
+      <p>Partner with Apostle Imani Ministries through any of the verified payment options below.</p>
     </div>
 
-    <h3 class="payment-heading" data-en="International Giving" data-sw="Utoaji wa Kimataifa">International Giving</h3>
+    <h3 class="payment-heading">Tanzania Giving Options</h3>
+
+    <div class="payment-grid">
+
+      <!-- NBC BANK -->
+      <article class="payment-card">
+        <img src="images/payments/nbc.png" alt="NBC Bank">
+        <h3>National Bank of Commerce (NBC)</h3>
+        <p><strong>Account Name:</strong> Julius Constantine Mushi</p>
+        <p><strong>Account Number:</strong> 030174090309</p>
+        <p><strong>SWIFT Code:</strong> NLCBTZTX</p>
+        <button onclick="copyText('030174090309',this)">Copy Account Number</button>
+      </article>
+
+      <!-- VODACOM M-PESA -->
+      <article class="payment-card">
+        <img src="images/payments/mpesa.png" alt="Vodacom M-PESA">
+        <h3>Vodacom (M-PESA)</h3>
+        <p><strong>Registered Name:</strong> Julius Constantine Mushi</p>
+        <p><strong>Number:</strong> +255749256665</p>
+        <button onclick="copyText('+255749256665',this)">Copy Number</button>
+      </article>
+
+      <!-- AIRTEL MONEY -->
+      <article class="payment-card">
+        <img src="images/payments/airtel.png" alt="Airtel Money">
+        <h3>Airtel Money</h3>
+        <p><strong>Registered Name:</strong> Julius Constantine Mushi</p>
+        <p><strong>Number:</strong> +255665955665</p>
+        <button onclick="copyText('+255665955665',this)">Copy Number</button>
+      </article>
+
+      <!-- MIXX BY YAS -->
+      <article class="payment-card">
+        <img src="images/payments/mixx.png" alt="Mixx by Yas">
+        <h3>Mixx by Yas</h3>
+        <p><strong>Registered Name:</strong> Julius Constantine Mushi</p>
+        <p><strong>Number:</strong> +255776723665</p>
+        <button onclick="copyText('+255776723665',this)">Copy Number</button>
+      </article>
+
+      <!-- HALOPESA -->
+      <article class="payment-card">
+        <img src="images/payments/halopesa.png" alt="HaloPesa">
+        <h3>HaloPesa</h3>
+        <p><strong>Registered Name:</strong> Julius Constantine Mushi</p>
+        <p><strong>Number:</strong> +255626355244</p>
+        <button onclick="copyText('+255626355244',this)">Copy Number</button>
+      </article>
+
+    </div>
+
+    <h3 class="payment-heading">International Giving</h3>
+
     <div class="payment-grid">
       <article class="payment-card">
-        <img src="images/payments/gcash.png" alt="GCash" loading="lazy" onerror="this.style.display='none'">
-        <h3 data-en="GCash (Philippines)" data-sw="GCash (Ufilipino)">GCash (Philippines)</h3>
-        <p><strong data-en="Registered Name:" data-sw="Jina Lililosajiliwa:">Registered Name:</strong> Julius Constantine Mushi</p>
-        <p><strong data-en="Number:" data-sw="Namba:">Number:</strong> +639667536305</p>
-        <button type="button" class="btn" data-en="Copy Number" data-sw="Nakili Namba" onclick="copyText('+639667536305',this)">Copy Number</button>
+        <img src="images/payments/gcash.png" alt="GCash">
+        <h3>GCash (Philippines)</h3>
+        <p><strong>Registered Name:</strong> Julius Constantine Mushi</p>
+        <p><strong>Number:</strong> +639667536305</p>
+        <button onclick="copyText('+639667536305',this)">Copy Number</button>
       </article>
     </div>
 
     <div class="payment-notice">
-      <strong data-en="Important Giving Information" data-sw="Taarifa Muhimu ya Utoaji">Important Giving Information</strong>
-      <p data-en="The bank and mobile money receiving accounts listed above are registered in the personal name of Julius Constantine Mushi. Please verify the recipient's name before confirming a transaction." data-sw="Akaunti za benki na pesa mtandao zilizoorodheshwa hapo juu zimesajiliwa kwa jina binafsi la Julius Constantine Mushi. Tafadhali hakikisha jina la mpokeaji kabla ya kuthibitisha muamala.">The bank and mobile money receiving accounts listed above are registered in the personal name of Julius Constantine Mushi. Please verify the recipient's name before confirming a transaction.</p>
-      <p data-en="These are direct payment instructions. This website does not automatically process or confirm payments." data-sw="Haya ni maelekezo ya malipo ya moja kwa moja. Tovuti hii haichakati wala kuthibitisha malipo kiotomatiki.">These are direct payment instructions. This website does not automatically process or confirm payments.</p>
+      <strong>Important Giving Information</strong>
+      <p>
+        The bank and mobile money receiving accounts listed above are
+        registered in the personal name of Julius Constantine Mushi.
+        Please verify the recipient's name before confirming a transaction.
+      </p>
+      <p>
+        These are direct payment instructions. This website does not
+        automatically process or confirm payments.
+      </p>
     </div>
-
   </div>
 </section>
 
-<div class="back-link"><a href="index.html" data-en="&larr; Back to Home" data-sw="&larr; Rudi Mwanzo">&larr; Back to Home</a></div>
+<script>
+function copyText(value, button) {
+  navigator.clipboard.writeText(value).then(function() {
+    const original = button.textContent;
+    button.textContent = "Copied!";
+    setTimeout(function() {
+      button.textContent = original;
+    }, 1800);
+  }).catch(function() {
+    alert("Please copy manually: " + value);
+  });
+}
+</script>
 
 </main>
 
@@ -718,12 +748,12 @@ button.btn{ font-family:inherit; cursor:pointer; }
   <div class="footer-brand">APOSTLE IMANI</div>
   <div class="footer-subtitle">MINISTRIES</div>
   <div class="footer-links">
-    <a href="index.html#home">Home / Mwanzo</a>
-    <a href="index.html#about">About / Kuhusu Sisi</a>
-    <a href="index.html#ministries">Ministries / Huduma</a>
-    <a href="index.html#faith">Faith / Imani</a>
-    <a href="index.html#books">Books / Vitabu</a>
-    <a href="index.html#contact">Contact / Mawasiliano</a>
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#ministries">Ministries</a>
+    <a href="index.html#faith">Faith</a>
+    <a href="index.html#books">Books</a>
+    <a href="index.html#contact">Contact</a>
     <a href="https://linktr.ee/apostleimani" target="_blank" rel="noopener noreferrer">Linktree</a>
   </div>
   <div class="copyright">
@@ -732,44 +762,7 @@ button.btn{ font-family:inherit; cursor:pointer; }
   </div>
 </footer>
 
-<script>
-let currentLanguage = "en";
-
-function setLanguage(language) {
-  currentLanguage = language;
-  document.documentElement.lang = language;
-  document.querySelectorAll("[data-en][data-sw]").forEach(function(el) {
-    el.innerHTML = el.getAttribute("data-" + language);
-  });
-  document.getElementById("languageButton").textContent = language === "en" ? "Kiswahili" : "English";
-  try { localStorage.setItem("apostleImaniLanguage", language); } catch (error) {}
-}
-
-function toggleLanguage() {
-  setLanguage(currentLanguage === "en" ? "sw" : "en");
-}
-
-function copyText(value, button) {
-  function done() {
-    button.textContent = currentLanguage === "en" ? "Copied!" : "Imenakiliwa!";
-    setTimeout(function() {
-      button.textContent = button.getAttribute("data-" + currentLanguage);
-    }, 1800);
-  }
-  navigator.clipboard.writeText(value).then(done).catch(function() {
-    alert((currentLanguage === "en" ? "Please copy manually: " : "Tafadhali nakili mwenyewe: ") + value);
-  });
-}
-
-document.getElementById("year").textContent = new Date().getFullYear();
-
-try {
-  var saved = localStorage.getItem("apostleImaniLanguage");
-  setLanguage(saved === "sw" ? "sw" : "en");
-} catch (error) {
-  setLanguage("en");
-}
-</script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
