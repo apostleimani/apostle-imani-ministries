@@ -596,6 +596,19 @@ footer .copyright {
   }
 }
 
+/* GIVING HERO, WHY GIVE, SCRIPTURE, PARTNER */
+.give-hero{ background:linear-gradient(120deg,var(--purple-dark),var(--purple-light)); color:white; text-align:center; padding:90px 20px 80px; }
+.give-pill{ display:inline-block; border:1px solid rgba(241,213,142,.5); border-radius:30px; padding:8px 18px; margin-bottom:24px; color:var(--gold-light); letter-spacing:4px; font-size:12px; font-weight:bold; }
+.give-hero h1{ font-size:clamp(38px,7vw,68px); line-height:1.12; max-width:850px; margin:0 auto; font-weight:800; }
+.give-hero p{ color:#eee8f4; max-width:700px; margin:22px auto 0; font-size:17px; }
+.give-tagline{ color:var(--gold-light); font-size:20px; font-style:italic; margin:22px 0 26px; }
+.why-section .card{ text-align:left; }
+.payments-section{ background:#efe9f3; }
+.scripture-section blockquote{ max-width:800px; margin:20px auto 0; font-size:clamp(24px,4vw,34px); font-style:italic; color:var(--gold-light); }
+.scripture-section cite{ display:block; margin-top:16px; color:#e4dce9; font-size:13px; letter-spacing:2px; text-transform:uppercase; font-style:normal; }
+.partner-section{ text-align:center; }
+.partner-section .verses{ color:var(--muted); font-size:14px; margin-top:14px; }
+
 /* GIVING PAGE (styles for the original giving section classes) */
 .payments-section .wrap{ width:min(1120px,92%); margin:auto; }
 .payments-section .section-head{ text-align:center; margin-bottom:34px; }
@@ -640,6 +653,39 @@ footer .copyright {
 </header>
 
 <main>
+
+<section class="give-hero">
+  <div class="container">
+    <div class="give-pill">PARTNER WITH THE GOSPEL</div>
+    <h1>Support the <span class="gold-text">Work of God</span></h1>
+    <p>
+      Your generosity helps us take the Gospel of Jesus Christ to all nations.
+      Every contribution can support evangelism, missionary outreach,
+      discipleship, Christian publications and the advancement of God's Kingdom.
+    </p>
+    <div class="give-tagline">Your Gift. Our Mission. God's Kingdom.</div>
+    <a class="btn" href="#donate">GIVE TO THE MISSION</a>
+  </div>
+</section>
+
+<section class="why-section" id="why-give">
+  <div class="container">
+    <h2 class="section-heading">Help Advance the Gospel</h2>
+    <p class="section-description">
+      <strong>WHY YOUR SUPPORT MATTERS.</strong>
+      Your support helps strengthen the ministry's work and share
+      the message of Jesus Christ with people and communities.
+    </p>
+    <div class="cards">
+      <article class="card"><h3>Evangelism &amp; Outreach</h3><p>Sharing the Gospel and reaching people with the message of salvation.</p></article>
+      <article class="card"><h3>Missionary Work</h3><p>Supporting Gospel missions and ministry engagement in communities and nations.</p></article>
+      <article class="card"><h3>Discipleship &amp; Teaching</h3><p>Encouraging spiritual growth through biblical teaching and Christian literature.</p></article>
+      <article class="card"><h3>Prayer &amp; Ministry Activities</h3><p>Supporting prayer, fasting and activities that encourage believers in faith.</p></article>
+      <article class="card"><h3>Christian Media &amp; Publications</h3><p>Creating and sharing faith-building messages, books and digital content.</p></article>
+      <article class="card"><h3>Ministry Development</h3><p>Strengthening the resources and capacity needed to serve the ministry's mission.</p></article>
+    </div>
+  </div>
+</section>
 
 <section id="donate" class="payments-section">
   <div class="wrap">
@@ -725,6 +771,29 @@ footer .copyright {
         automatically process or confirm payments.
       </p>
     </div>
+  </div>
+</section>
+
+<section class="dark-section scripture-section" style="text-align:center">
+  <div class="container">
+    <div class="eyebrow" style="color:var(--gold-light);letter-spacing:4px;font-size:12px;font-weight:bold">A HEART OF GENEROSITY</div>
+    <blockquote>&ldquo;God loveth a cheerful giver.&rdquo;</blockquote>
+    <cite>2 Corinthians 9:7 &middot; King James Version</cite>
+  </div>
+</section>
+
+<section class="partner-section">
+  <div class="container">
+    <div class="eyebrow" style="color:#8a641d;letter-spacing:4px;font-size:12px;font-weight:bold">BECOME A MINISTRY PARTNER</div>
+    <h2 class="section-heading" style="margin-top:10px">Together, Let Us Reach the Nations</h2>
+    <p class="section-description">
+      Wherever you are in the world, you can stand with Apostle Imani Ministries
+      through prayer, encouragement and financial partnership. Thank you for
+      believing in the Gospel and supporting its advancement.
+    </p>
+    <div class="give-tagline" style="color:#8a641d">Divine Calling. Revelation of Faith.</div>
+    <a class="btn" href="#donate">PARTNER WITH AIM</a>
+    <p class="verses">Mark 16:15 &nbsp;|&nbsp; Matthew 28:19&ndash;20</p>
   </div>
 </section>
 
