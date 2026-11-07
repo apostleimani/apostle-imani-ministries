@@ -4,19 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apostle Imani Ministries</title>
+<link rel="canonical" href="https://apostleimani.org/">
+<meta name="theme-color" content="#1a1030">
 <meta name="description" content="Apostle Imani Ministries, founded by Julius Constantine (Apostle Imani), carries the Gospel from Dar es Salaam to Manila through crusades, discipleship, and global prayer.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Apostle Imani Ministries">
 <meta property="og:title" content="Apostle Imani Ministries">
 <meta property="og:description" content="Carrying the Gospel from Dar es Salaam to Manila through crusades, discipleship, and global prayer.">
-<meta property="og:url" content="https://apostleimani.github.io/apostle-imani-ministries/">
-<meta property="og:image" content="https://apostleimani.github.io/apostle-imani-ministries/images/logo.png">
-<meta property="og:image:alt" content="Apostle Imani Ministries logo">
+<meta property="og:url" content="https://apostleimani.org/">
+<meta property="og:image" content="https://apostleimani.org/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Welcome to God's Family, Apostle Imani Ministries">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Apostle Imani Ministries">
 <meta name="twitter:description" content="Carrying the Gospel from Dar es Salaam to Manila through crusades, discipleship, and global prayer.">
-<meta name="twitter:image" content="https://apostleimani.github.io/apostle-imani-ministries/images/logo.png">
+<meta name="twitter:image" content="https://apostleimani.org/images/og-image.jpg">
 
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/favicon-512.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -102,7 +110,20 @@
   .logo span{ color: var(--gold-bright); }
   nav{ display: flex; gap: 26px; font-size: 14px; color: var(--slate); }
   nav a:hover{ color: var(--ivory); }
-  @media (max-width: 760px){ nav{ display: none; } }
+  header{ position: relative; }
+  .menu-btn{ display: none; background: none; border: 1px solid var(--line-bright); border-radius: 3px; width: 44px; height: 44px; padding: 0; cursor: pointer; align-items: center; justify-content: center; flex-direction: column; gap: 5px; flex: none; }
+  .menu-btn span{ display: block; width: 20px; height: 2px; background: var(--ivory); transition: transform .2s ease, opacity .2s ease; }
+  .menu-btn:focus-visible{ outline: 2px solid var(--gold-bright); outline-offset: 2px; }
+  .menu-btn[aria-expanded="true"] span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+  .menu-btn[aria-expanded="true"] span:nth-child(2){ opacity: 0; }
+  .menu-btn[aria-expanded="true"] span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+  @media (max-width: 760px){
+    .menu-btn{ display: flex; }
+    nav{ display: none; position: absolute; top: 100%; left: 0; right: 0; z-index: 50; flex-direction: column; gap: 0; background: var(--ink-2); border-bottom: 1px solid var(--line-bright); padding: 8px 32px 16px; font-size: 16px; }
+    nav.open{ display: flex; }
+    nav a{ padding: 14px 0; border-bottom: 1px solid var(--line); color: var(--ivory); }
+    nav a:last-child{ border-bottom: none; }
+  }
 
   /* ---------- Hero ---------- */
   .hero{ padding: 80px 0 92px; border-bottom: 1px solid var(--line); }
@@ -286,7 +307,8 @@
   <header>
     <div class="wrap">
       <div class="logo"><img src="images/logo.png" alt="Apostle Imani Ministries logo"> <span class="logo-text">APOSTLE IMANI <span>MINISTRIES</span></span></div>
-      <nav>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main">
         <a href="#about">About</a>
         <a href="#testimony">Testimony</a>
         <a href="#field">In the Field</a>
@@ -294,6 +316,7 @@
         <a href="#vision">Vision</a>
         <a href="#prayer">Prayer</a>
         <a href="#books">Books</a>
+        <a href="give.html">Give</a>
         <a href="#watch">Connect</a>
       </nav>
     </div>
@@ -488,7 +511,7 @@
         <div class="big-link">bit.ly/4xedbRU</div>
         <p>Fill out this form to be part of the next live prayer session.</p>
         <a class="btn btn-solid" href="https://bit.ly/4xedbRU" target="_blank" rel="noopener">Join the Prayer Session</a>
-        <p style="margin-top:22px; padding-top:18px; border-top:1px solid var(--line);">Prefer email? Write to <span style="color:var(--gold-bright);">apostleimani@outlook.com</span> — messages are read personally.</p>
+        <p style="margin-top:22px; padding-top:18px; border-top:1px solid var(--line);">Prefer email? Write to <span style="color:var(--gold-bright);">info@apostleimani.org</span> — messages are read personally.</p>
       </div>
     </div>
   </section>
@@ -575,7 +598,7 @@
   <h3 style="margin:0 0 .5rem;">Our official accounts</h3>
   <p style="margin:0 0 .75rem;">
     Apostle Imani Ministries posts only from the accounts below. If you find another account using our name or photos, please do not send money or personal information, and report it to
-    <a href="mailto:apostleimani@outlook.com">apostleimani@outlook.com</a>.
+    <a href="mailto:info@apostleimani.org">info@apostleimani.org</a>.
   </p>
   <ul style="margin:0;padding-left:1.2rem;">
     <li><a href="https://youtube.com/@apostleimani">YouTube: @apostleimani</a></li>
@@ -605,6 +628,22 @@
       </div>
     </div>
   </footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menu-btn'), nav=document.getElementById('site-nav');
+  if(!btn||!nav) return;
+  function setOpen(o){
+    nav.classList.toggle('open',o);
+    btn.setAttribute('aria-expanded',o?'true':'false');
+    btn.setAttribute('aria-label',o?'Close menu':'Open menu');
+  }
+  btn.addEventListener('click',function(){ setOpen(!nav.classList.contains('open')); });
+  nav.addEventListener('click',function(e){ if(e.target.tagName==='A') setOpen(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setOpen(false); });
+  window.addEventListener('resize',function(){ if(window.innerWidth>760) setOpen(false); });
+})();
+</script>
 
 </body>
 </html>
