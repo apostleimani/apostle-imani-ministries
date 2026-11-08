@@ -531,6 +531,137 @@ footer .copyright {
   display:none !important;
 }
 
+/* LIVE SESSION ANNOUNCEMENT */
+
+.session-grid {
+  display:grid;
+  grid-template-columns:0.9fr 1.1fr;
+  gap:48px;
+  align-items:center;
+}
+
+.session-poster {
+  width:100%;
+  max-width:480px;
+  margin:auto;
+  border-radius:16px;
+  overflow:hidden;
+  border:4px solid white;
+  box-shadow:var(--shadow);
+}
+
+.session-poster img {
+  width:100%;
+  height:auto;
+}
+
+.session-text h2 {
+  color:var(--purple);
+  font-size:clamp(26px,4vw,38px);
+  line-height:1.2;
+  margin-bottom:18px;
+}
+
+.session-text p {
+  color:var(--text);
+  font-size:17px;
+  margin-bottom:12px;
+}
+
+.session-text .btn {
+  margin-left:0;
+  margin-top:14px;
+}
+
+/* SALVATION PRAYER */
+
+.salvation-grid {
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  gap:48px;
+  align-items:center;
+}
+
+.salvation-text h2 {
+  color:var(--purple);
+  font-size:clamp(26px,4vw,38px);
+  line-height:1.2;
+  margin-bottom:16px;
+}
+
+.salvation-text h3 {
+  color:#8a641d;
+  font-size:18px;
+  margin:22px 0 10px;
+}
+
+.salvation-text p {
+  margin-bottom:12px;
+}
+
+.salvation-text .verse-lines {
+  font-weight:bold;
+  color:var(--purple);
+}
+
+.prayer-box {
+  background:white;
+  border-left:5px solid var(--gold);
+  border-radius:13px;
+  padding:22px 24px;
+  box-shadow:var(--shadow);
+  font-style:italic;
+  color:#514b58;
+  margin:12px 0 16px;
+}
+
+.salvation-closing {
+  font-weight:bold;
+  color:var(--purple);
+}
+
+.salvation-text .btn {
+  margin-left:0;
+  margin-top:14px;
+}
+
+/* WELCOME TO THE FAMILY */
+
+.welcome-text h2 {
+  color:var(--gold-light);
+  font-size:clamp(26px,4vw,38px);
+  line-height:1.2;
+  margin-bottom:18px;
+}
+
+.welcome-text h3 {
+  color:var(--gold-light);
+  font-size:18px;
+  margin:24px 0 10px;
+}
+
+.welcome-text p {
+  color:#e9e2ed;
+  font-size:17px;
+  margin-bottom:12px;
+}
+
+.welcome-text a.contact-link {
+  color:var(--gold-light);
+  font-weight:bold;
+  overflow-wrap:anywhere;
+  border-bottom:1px solid var(--gold);
+}
+
+.welcome-text a.contact-link:hover {
+  color:white;
+}
+
+.welcome-text .btn {
+  margin-left:0;
+  margin-top:14px;
+}
+
 /* NEW MONTH GREETING (delete the whole new-month section in December) */
 
 .newmonth-grid {
@@ -632,6 +763,21 @@ footer .copyright {
     grid-template-columns:1fr;
     gap:30px;
     text-align:center;
+  }
+
+  .session-grid {
+    grid-template-columns:1fr;
+    gap:30px;
+    text-align:center;
+  }
+
+  .salvation-grid {
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .salvation-poster {
+    order:-1;
   }
 
   .newmonth-text p {
@@ -746,6 +892,41 @@ footer .copyright {
 </section>
 
 
+<!-- LIVE PRAYER SESSION ANNOUNCEMENT (delete this whole section after the session) -->
+
+<section id="live-session">
+  <div class="container">
+    <div class="session-grid">
+
+      <div class="session-poster">
+        <img src="images/distance-session-2.png"
+             width="1440" height="1440"
+             alt="Distance is not a barrier, Session 2, coming soon. The Imani Ministries"
+             loading="lazy">
+      </div>
+
+      <div class="session-text">
+        <h2>🌍 DISTANCE IS NOT A BARRIER TO THE MOVE OF THE HOLY SPIRIT!</h2>
+        <p>
+          Get ready! A brand-new Interactive Prayer Session will soon be
+          streamed live on our Official Facebook Page.
+        </p>
+        <p>
+          Please fill out and submit this form, click the link below:
+        </p>
+        <a href="https://forms.gle/5ytVYZhukBHZ5BkU7"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn">
+          👉 Register Here
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- NEW MONTH GREETING (delete this whole section in December) -->
 
 <section class="dark-section" id="new-month">
@@ -773,6 +954,123 @@ footer .copyright {
         <div class="newmonth-sign">~ Apostle Imani</div>
 
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SALVATION PRAYER -->
+
+<section id="salvation">
+  <div class="container">
+    <div class="salvation-grid">
+
+      <div class="salvation-text">
+        <h2>JESUS IS CALLING YOU TODAY!</h2>
+        <p>
+          🕊️ Genuine peace and lasting fulfillment flow from an encounter
+          with your Creator.
+        </p>
+        <p>
+          No matter what your past looks like or what you are facing today,
+          Jesus Christ is reaching out to you with love, mercy, and a
+          brand-new beginning.
+        </p>
+
+        <h3>❤️ SAY YES TO HIM TODAY</h3>
+        <p>
+          Take the bold step to begin your journey of salvation by opening
+          your heart to Jesus Christ.
+        </p>
+        <p class="verse-lines">
+          His grace is greater than your mistakes.<br>
+          His mercy is greater than your failures.<br>
+          His love is waiting for you.
+        </p>
+
+        <h3>🙏 PRAY THIS PRAYER OF SALVATION</h3>
+        <div class="prayer-box">
+          “Heavenly Father, I come to You in the name of Jesus. Your Word
+          says, ‘Whosoever shall call on the name of the Lord shall be saved’
+          (Acts 2:21). I am calling on You. I ask Jesus to come into my heart
+          and be Lord over my life, according to Romans 10:9-10: ‘If thou
+          shalt confess with thy mouth the Lord Jesus, and shalt believe in
+          thine heart that God hath raised him from the dead, thou shalt be
+          saved.’ I do that now. I confess that Jesus is Lord, and I believe
+          in my heart that God raised Him from the dead.”
+        </div>
+        <p>
+          If you have prayed this prayer, welcome to the family of God.
+          Let us hear from you!
+        </p>
+
+        <h3>🌿 YOUR NEW LIFE BEGINS NOW</h3>
+        <p class="salvation-closing">
+          One prayer of faith can change your eternity.<br>
+          Jesus is waiting. Say YES to Him today! ❤️
+        </p>
+        <a href="#contact" class="btn">Let Us Hear From You</a>
+      </div>
+
+      <div class="session-poster salvation-poster">
+        <img src="images/salvation-prayer.png"
+             width="1440" height="1440"
+             alt="Salvation Prayer. The Imani Ministries, Apostle Imani"
+             loading="lazy">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- WELCOME TO THE FAMILY OF FAITH -->
+
+<section class="dark-section" id="welcome">
+  <div class="container">
+    <div class="session-grid">
+
+      <div class="session-poster">
+        <img src="images/welcome-family-of-faith.png"
+             width="1254" height="1254"
+             alt="If you just received Jesus Christ as your Lord and personal Saviour. Apostle Imani Ministries"
+             loading="lazy">
+      </div>
+
+      <div class="welcome-text">
+        <h2>📩 WELCOME TO THE FAMILY OF FAITH!</h2>
+        <p>
+          ✨ If you received Jesus Christ as your Lord and Saviour tonight,
+          we rejoice with you! This is the beginning of a powerful walk
+          with God.
+        </p>
+        <p>
+          🤍 We would love to pray with you and walk alongside you.
+        </p>
+
+        <h3>📲 CONNECT WITH US</h3>
+        <p>
+          🔗 <a class="contact-link"
+                href="https://forms.gle/GEMq4Frq92kxMPir8"
+                target="_blank"
+                rel="noopener noreferrer">https://forms.gle/GEMq4Frq92kxMPir8</a>
+        </p>
+        <p>
+          📧 <a class="contact-link"
+                href="mailto:info@apostleimani.org">info@apostleimani.org</a>
+        </p>
+        <p>
+          🙏 Welcome to the Kingdom of God, your new life has just begun!
+        </p>
+
+        <a href="https://forms.gle/GEMq4Frq92kxMPir8"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn">
+          Connect With Us
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
