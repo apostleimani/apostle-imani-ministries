@@ -169,22 +169,6 @@ nav a:hover {
   color:var(--gold);
 }
 
-.language-button {
-  background:transparent;
-  color:var(--gold-light);
-  border:1px solid var(--gold);
-  padding:8px 13px;
-  border-radius:25px;
-  font-weight:bold;
-  cursor:pointer;
-  white-space:nowrap;
-}
-
-.language-button:hover {
-  background:var(--gold);
-  color:var(--purple);
-}
-
 /* BUTTONS */
 
 .btn {
@@ -543,14 +527,8 @@ footer .copyright {
   font-size:12px;
 }
 
-/* LANGUAGE */
-
 [hidden] {
   display:none !important;
-}
-
-.lang-content {
-  display:block;
 }
 
 /* NEW MONTH GREETING (delete the whole new-month section in December) */
@@ -717,22 +695,15 @@ footer .copyright {
     <div class="nav-area">
 
       <nav>
-        <a href="#home" data-en="Home" data-sw="Mwanzo">Home</a>
-        <a href="#about" data-en="About" data-sw="Kuhusu Sisi">About</a>
-        <a href="#vision" data-en="Our Vision" data-sw="Maono Yetu">Our Vision</a>
-        <a href="#ministries" data-en="Ministries" data-sw="Huduma">Ministries</a>
-        <a href="#faith" data-en="Faith" data-sw="Imani">Faith</a>
-        <a href="#books" data-en="Books" data-sw="Vitabu">Books</a>
-        <a href="#media" data-en="Media" data-sw="Habari">Media</a>
-        <a href="#contact" data-en="Contact" data-sw="Mawasiliano">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#vision">Our Vision</a>
+        <a href="#ministries">Ministries</a>
+        <a href="#faith">Faith</a>
+        <a href="#books">Books</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
       </nav>
-
-      <button class="language-button"
-        id="languageButton"
-        type="button"
-        onclick="toggleLanguage()">
-        Kiswahili
-      </button>
 
     </div>
   </div>
@@ -750,7 +721,6 @@ footer .copyright {
       APOSTLE IMANI MINISTRIES
     </div>
 
-    <div class="lang-content" data-language="en">
       <h1>
         Proclaiming Christ.
         <span class="gold-text">Transforming Lives.</span>
@@ -763,22 +733,7 @@ footer .copyright {
       </p>
 
       <a href="#about" class="btn">Discover Our Ministry</a>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h1>
-        Kumtangaza Kristo.
-        <span class="gold-text">Kubadilisha Maisha.</span>
-      </h1>
-
-      <p>
-        Huduma ya imani, uamsho, maombi na Utume Mkuu.
-        Kushiriki upendo wa Yesu Kristo na kuwaandaa waamini
-        kutimiza kusudi la Mungu.
-      </p>
-
-      <a href="#about" class="btn">Fahamu Huduma Yetu</a>
-    </div>
 
     <a href="https://linktr.ee/apostleimani"
        target="_blank"
@@ -806,7 +761,6 @@ footer .copyright {
 
       <div class="newmonth-text">
 
-        <div class="lang-content" data-language="en">
           <div class="eyebrow">NOVEMBER 2026</div>
           <h2>Happy New Month, <span class="gold-text">welcome to November!</span></h2>
           <p>
@@ -814,17 +768,7 @@ footer .copyright {
             Step into it with faith, and let us pray and believe together.
           </p>
           <a href="#contact" class="btn">Request Prayer</a>
-        </div>
 
-        <div class="lang-content" data-language="sw" hidden>
-          <div class="eyebrow">NOVEMBA 2026</div>
-          <h2>Heri ya Mwezi Mpya, <span class="gold-text">karibu Novemba!</span></h2>
-          <p>
-            Huu ni mwezi wako wa ongezeko la kiungu na wingi.
-            Uingie ndani yake kwa imani, na tuombe na tuamini pamoja.
-          </p>
-          <a href="#contact" class="btn">Omba Maombi</a>
-        </div>
 
         <div class="newmonth-sign">~ Apostle Imani</div>
 
@@ -839,21 +783,12 @@ footer .copyright {
 <section id="intro" hidden>
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Meet Apostle Imani</h2>
       <p class="section-description">
         Watch the Apostle Imani intro and discover a ministry
         proclaiming Christ and transforming lives.
       </p>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Mfahamu Apostle Imani</h2>
-      <p class="section-description">
-        Tazama utambulisho wa Apostle Imani na ujue huduma
-        inayomtangaza Kristo na kubadilisha maisha.
-      </p>
-    </div>
 
     <div class="intro-video">
       <video controls playsinline preload="metadata"
@@ -872,21 +807,12 @@ footer .copyright {
 <section id="about">
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Welcome to Apostle Imani Ministries</h2>
       <p class="section-description">
         A Christ-centred ministry committed to proclaiming the Gospel,
         making disciples and equipping believers for God's purpose.
       </p>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Karibu Apostle Imani Ministries</h2>
-      <p class="section-description">
-        Huduma inayomweka Kristo katikati, yenye kujitoa kutangaza Injili,
-        kufanya wanafunzi na kuwaandaa waamini kwa kusudi la Mungu.
-      </p>
-    </div>
 
     <div class="about-grid">
 
@@ -898,7 +824,6 @@ footer .copyright {
 
       <div class="about-content">
 
-        <div class="lang-content" data-language="en">
           <h3>Our Calling</h3>
           <p>
             Apostle Imani Ministries exists to proclaim Jesus Christ,
@@ -926,38 +851,7 @@ footer .copyright {
             with a commitment to serve the purpose of God and proclaim
             the message of Jesus Christ.
           </p>
-        </div>
 
-        <div class="lang-content" data-language="sw" hidden>
-          <h3>Wito Wetu</h3>
-          <p>
-            Apostle Imani Ministries ipo kwa ajili ya kumtangaza Yesu Kristo,
-            kuwaimarisha waamini katika Neno la Mungu, kuhamasisha maombi,
-            kuzidisha wanafunzi na kuwaandaa Wakristo kushiriki katika
-            kutimiza Utume Mkuu.
-          </p>
-
-          <h3>Mwanzilishi Wetu</h3>
-          <p>
-            Julius Constantine Mushi, anayejulikana katika huduma kama
-            Apostle Imani, ni mwandishi wa vitabu vya Kikristo,
-            mhubiri mmisionari na nabii aliyejitoa kwa ajili ya
-            Injili ya Yesu Kristo.
-          </p>
-
-          <p>
-            Safari ya huduma ilijengwa katika kipindi cha siku arobaini
-            za kufunga na kuomba, mchana na usiku, mwaka 2018.
-            Katika kipindi hicho, Apostle Imani alipata kujitoa upya
-            kwa Yesu Kristo, Neno Lake, Injili na kazi ya kuokoa roho.
-          </p>
-
-          <p>
-            Pamoja na marafiki wa imani, alianza safari ya huduma
-            kwa kujitoa kulitumikia kusudi la Mungu na kutangaza
-            ujumbe wa Yesu Kristo.
-          </p>
-        </div>
 
       </div>
     </div>
@@ -970,78 +864,41 @@ footer .copyright {
 <section class="dark-section" id="vision">
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Our Vision & Mission</h2>
       <p class="section-description">
         Serving God's purpose through the Gospel of Jesus Christ.
       </p>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Maono na Dhamira Yetu</h2>
-      <p class="section-description">
-        Kuitumikia kazi ya Mungu kupitia Injili ya Yesu Kristo.
-      </p>
-    </div>
 
     <div class="cards">
 
       <div class="card">
-        <div class="lang-content" data-language="en">
           <h3>Our Vision</h3>
           <p>
             To see lives transformed through Christ, disciples multiplied,
             believers grounded in God's Word and Christian leaders
             equipped for the Great Commission.
           </p>
-        </div>
 
-        <div class="lang-content" data-language="sw" hidden>
-          <h3>Maono Yetu</h3>
-          <p>
-            Kuona maisha yakibadilishwa kupitia Kristo, wanafunzi
-            wakiongezeka, waamini wakijengwa katika Neno la Mungu
-            na viongozi wa Kikristo wakiandaliwa kwa ajili ya Utume Mkuu.
-          </p>
-        </div>
       </div>
 
       <div class="card">
-        <div class="lang-content" data-language="en">
           <h3>Our Mission</h3>
           <p>
             To preach Jesus Christ, teach the Word of God, nurture faith,
             encourage prayer, develop disciples and equip Christian
             leaders for faithful service.
           </p>
-        </div>
 
-        <div class="lang-content" data-language="sw" hidden>
-          <h3>Dhamira Yetu</h3>
-          <p>
-            Kuhubiri Yesu Kristo, kufundisha Neno la Mungu, kukuza imani,
-            kuhamasisha maombi, kuendeleza wanafunzi na kuwaandaa
-            viongozi wa Kikristo kwa utumishi wenye uaminifu.
-          </p>
-        </div>
       </div>
 
       <div class="card">
-        <div class="lang-content" data-language="en">
           <h3>Our Foundation</h3>
           <p>
             Jesus Christ is the centre of our faith, the foundation
             of our ministry and the message we proclaim to all nations.
           </p>
-        </div>
 
-        <div class="lang-content" data-language="sw" hidden>
-          <h3>Msingi Wetu</h3>
-          <p>
-            Yesu Kristo ndiye kiini cha imani yetu, msingi wa huduma yetu
-            na ujumbe tunaoutangaza kwa mataifa yote.
-          </p>
-        </div>
         <strong class="gold-text">Mark 16:15</strong>
       </div>
 
@@ -1055,19 +912,11 @@ footer .copyright {
 <div class="verse">
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <blockquote>
         "Go into all the world and preach the gospel to all creation."
       </blockquote>
       <strong>MARK 16:15</strong>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <blockquote>
-        "Enendeni ulimwenguni mwote, mkaihubiri Injili kwa kila kiumbe."
-      </blockquote>
-      <strong>MARKO 16:15</strong>
-    </div>
 
   </div>
 </div>
@@ -1078,92 +927,59 @@ footer .copyright {
 <section id="ministries">
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Our Ministries</h2>
       <p class="section-description">
         Equipping believers, strengthening faith and reaching people
         with the Gospel of Jesus Christ.
       </p>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Huduma Zetu</h2>
-      <p class="section-description">
-        Kuwaandaa waamini, kuimarisha imani na kuwafikia watu
-        kwa Injili ya Yesu Kristo.
-      </p>
-    </div>
 
     <div class="cards">
 
       <div class="card">
         <h3>Preaching & Evangelism</h3>
-        <p class="lang-content" data-language="en">
+        <p>
           Proclaiming the Gospel of Jesus Christ and reaching people
           with the message of salvation.
         </p>
-        <p class="lang-content" data-language="sw" hidden>
-          Kutangaza Injili ya Yesu Kristo na kuwafikia watu
-          kwa ujumbe wa wokovu.
-        </p>
       </div>
 
       <div class="card">
-        <h3>Prayer & Fasting | Maombi na Kufunga</h3>
-        <p class="lang-content" data-language="en">
+        <h3>Prayer & Fasting</h3>
+        <p>
           Encouraging believers to grow in prayer, spiritual discipline
           and fellowship with God.
         </p>
-        <p class="lang-content" data-language="sw" hidden>
-          Kuwahamasisha waamini kukua katika maombi, nidhamu ya kiroho
-          na ushirika na Mungu.
-        </p>
       </div>
 
       <div class="card">
-        <h3>Discipleship | Uanafunzi</h3>
-        <p class="lang-content" data-language="en">
+        <h3>Discipleship</h3>
+        <p>
           Teaching the Word of God and nurturing mature followers
           of Jesus Christ.
         </p>
-        <p class="lang-content" data-language="sw" hidden>
-          Kufundisha Neno la Mungu na kulea wafuasi waliokomaa
-          wa Yesu Kristo.
-        </p>
       </div>
 
       <div class="card">
-        <h3>Christian Leadership | Uongozi wa Kikristo</h3>
-        <p class="lang-content" data-language="en">
+        <h3>Christian Leadership</h3>
+        <p>
           Encouraging and equipping emerging leaders for faithful
           Christian service.
         </p>
-        <p class="lang-content" data-language="sw" hidden>
-          Kuwatia moyo na kuwaandaa viongozi wapya kwa ajili
-          ya utumishi wa Kikristo wenye uaminifu.
-        </p>
       </div>
 
       <div class="card">
-        <h3>Missionary Engagement | Umisionari</h3>
-        <p class="lang-content" data-language="en">
+        <h3>Missionary Engagement</h3>
+        <p>
           Supporting the mission of making Christ known among all nations.
         </p>
-        <p class="lang-content" data-language="sw" hidden>
-          Kushiriki katika utume wa kumfanya Kristo ajulikane
-          miongoni mwa mataifa yote.
-        </p>
       </div>
 
       <div class="card">
-        <h3>Christian Literature | Machapisho ya Kikristo</h3>
-        <p class="lang-content" data-language="en">
+        <h3>Christian Literature</h3>
+        <p>
           Sharing biblical truth and spiritual encouragement through
           Christian books and resources.
-        </p>
-        <p class="lang-content" data-language="sw" hidden>
-          Kushiriki kweli za Biblia na kutia moyo kiroho kupitia
-          vitabu na rasilimali za Kikristo.
         </p>
       </div>
 
@@ -1177,28 +993,18 @@ footer .copyright {
 <section id="faith" class="dark-section">
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Our Statement of Faith</h2>
       <p class="section-description">
         The biblical convictions that guide our faith,
         teaching and ministry.
       </p>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Tamko Letu la Imani</h2>
-      <p class="section-description">
-        Misingi ya kibiblia inayoongoza imani,
-        mafundisho na huduma yetu.
-      </p>
-    </div>
 
 
     <!-- 1 -->
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>1. The Holy Spirit</h3>
         <p>
           We believe the Holy Spirit worked with the Father and the Son
@@ -1216,28 +1022,7 @@ footer .copyright {
           He completely changes our lives. This is called being converted
           or born again.
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>1. Roho Mtakatifu</h3>
-        <p>
-          Tunaamini kwamba Roho Mtakatifu alifanya kazi pamoja na Baba
-          na Mwana katika kuumba ulimwengu. Baba alitupa Roho Wake ili
-          atufanye tufanane na Mwana Wake, Yesu Kristo. Yesu Kristo
-          tunayemjua ni Yesu aliye katika uweza wa Roho Mtakatifu.
-          Alitoa ahadi ya ajabu katika Yohana 14:16-17: "Nami nitamwomba
-          Baba, naye atawapa Msaidizi mwingine, ili akae nanyi hata milele;
-          ndiye Roho wa kweli, ambaye ulimwengu hauwezi kumpokea,
-          kwa kuwa haumwoni wala haumtambui; bali ninyi mnamtambua,
-          maana anakaa kwenu, naye atakuwa ndani yenu." Roho Mtakatifu
-          atakuwa pamoja nasi milele. Hatajulikana wala kupokelewa
-          na kila mtu, bali na wale tu walio tayari kumpokea.
-          Roho Mtakatifu hutuonyesha ubaya wa dhambi zetu.
-          Hutusaidia kumpokea Yesu Kristo kama Mwokozi wetu.
-          Hubadilisha maisha yetu kabisa. Hali hii huitwa kuongoka
-          au kuzaliwa mara ya pili.
-        </p>
-      </div>
 
     </div>
 
@@ -1246,7 +1031,6 @@ footer .copyright {
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>2. Jesus Christ</h3>
         <p>
           We believe Jesus Christ is a soul-winner. That is what He came
@@ -1260,25 +1044,7 @@ footer .copyright {
           just as we are, yet was without sin. Jesus Christ loves us,
           died for us, reigns in power for us and still prays for us.
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>2. Yesu Kristo</h3>
-        <p>
-          Tunaamini kwamba Yesu Kristo ni mshindi wa roho za watu.
-          Hilo ndilo kusudi alilokuja kwa ajili yake, aliloishi kwa ajili yake,
-          alilokufa kwa ajili yake na kufufuka tena kwa ajili yake.
-          Alikuja kurejesha uhusiano na ushirika kati ya Mungu na mwanadamu.
-          Kwa habari ya asili Yake ya kibinadamu, Yesu Kristo alikuwa
-          mzao wa Daudi. Kwa habari ya asili Yake ya Uungu, alidhihirishwa
-          kwa uweza mkuu kuwa Mwana wa Mungu kwa kufufuliwa kutoka kwa wafu
-          siku ya tatu. Sasa ameketi mkono wa kuume wa kiti cha enzi cha Mungu
-          (Waebrania 12:2; Warumi 1:2-4). Alijaribiwa kwa kila namna
-          kama sisi, lakini hakutenda dhambi. Yesu Kristo anatupenda,
-          alikufa kwa ajili yetu, anatawala kwa uweza kwa ajili yetu
-          na bado anatuombea.
-        </p>
-      </div>
 
     </div>
 
@@ -1287,7 +1053,6 @@ footer .copyright {
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>3. The Holy Bible</h3>
         <p>
           We believe holy men of God were carried along by the Holy Spirit
@@ -1296,18 +1061,7 @@ footer .copyright {
           message of grace and truth to us today
           (2 Timothy 3:16; 2 Peter 1:21).
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>3. Biblia Takatifu</h3>
-        <p>
-          Tunaamini kwamba watu watakatifu wa Mungu waliongozwa
-          na Roho Mtakatifu walipokuwa wakinena ujumbe uliotoka kwa Mungu.
-          Biblia Takatifu si kumbukumbu tu za matukio ya zamani
-          wala hekima ya kale. Ni ujumbe wa Mungu wa neema na kweli
-          kwetu hata leo (2 Timotheo 3:16; 2 Petro 1:21).
-        </p>
-      </div>
 
     </div>
 
@@ -1316,7 +1070,6 @@ footer .copyright {
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>4. Sin and New Life</h3>
         <p>
           We believe sin points one to eternal death and destruction
@@ -1325,19 +1078,7 @@ footer .copyright {
           one day. God's Spirit joins Himself to our spirit to declare
           that we are God's children (Romans 8:16).
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>4. Dhambi na Uzima Mpya</h3>
-        <p>
-          Tunaamini kwamba dhambi humwelekeza mtu kwenye mauti ya milele
-          na uharibifu, lakini Neno la Mungu humwelekeza kwenye uzima.
-          Ikiwa Kristo Yesu ndiye Bwana na Mwokozi wetu, siku moja
-          tutapokea mwili mpya, nafsi mpya na roho mpya. Roho wa Mungu
-          huungana na roho zetu ili kushuhudia kwamba sisi ni watoto
-          wa Mungu (Warumi 8:16).
-        </p>
-      </div>
 
     </div>
 
@@ -1346,7 +1087,6 @@ footer .copyright {
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>5. Salvation</h3>
         <p>
           We believe salvation is to be set free from sin and its penalties
@@ -1355,18 +1095,7 @@ footer .copyright {
           personal Lord and Saviour, otherwise Jesus' death will not
           save him.
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>5. Wokovu</h3>
-        <p>
-          Tunaamini kwamba wokovu ni kuwekwa huru kutoka katika dhambi
-          na adhabu zake, nao hupokelewa kwa imani katika nguvu
-          ya utakaso ya Damu ya Yesu Kristo. Kila mtu anapaswa
-          kumpokea Yesu Kristo binafsi kuwa Bwana na Mwokozi wake;
-          vinginevyo, kifo cha Yesu hakitakuwa na manufaa ya kumwokoa.
-        </p>
-      </div>
 
     </div>
 
@@ -1375,7 +1104,6 @@ footer .copyright {
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>6. The New Birth</h3>
         <p>
           We believe God's Word refreshes our minds while God's Spirit
@@ -1383,18 +1111,7 @@ footer .copyright {
           God's Word but also His Spirit, mixed with repentance and faith
           in our hearts.
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>6. Kuzaliwa Mara ya Pili</h3>
-        <p>
-          Tunaamini kwamba Neno la Mungu huburudisha nia zetu,
-          huku Roho wa Mungu akizifanya nguvu zetu kuwa mpya.
-          Ili mtu azaliwe mara ya pili, haitoshi kuwa na Neno la Mungu
-          pekee, bali anapaswa pia kuwa na Roho Wake, pamoja na toba
-          na imani ndani ya moyo wake.
-        </p>
-      </div>
 
     </div>
 
@@ -1403,7 +1120,6 @@ footer .copyright {
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>7. Divine Healing</h3>
         <p>
           We believe divine healing is the supernatural power of God
@@ -1415,22 +1131,7 @@ footer .copyright {
           in the benefits that Jesus Christ bought for us at Calvary
           (Isaiah 53:5; Mark 6:13; James 5:14-15; 1 Peter 2:24).
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>7. Uponyaji wa Kiungu</h3>
-        <p>
-          Tunaamini kwamba uponyaji wa kiungu ni nguvu za Mungu
-          za kimiujiza zinazoleta afya katika mwili wa mwanadamu.
-          Hupokelewa kwa imani katika kazi iliyokamilishwa na Bwana wetu
-          Yesu Kristo. Adhabu yote aliyopata Yesu Kristo kabla na wakati
-          wa kusulubiwa Kwake ilikuwa kwa ajili ya uponyaji wetu,
-          roho, nafsi na mwili. Kwa kupigwa Kwake sisi tumepona.
-          Uponyaji wa kiungu ulikuwa sehemu ya baraka ambazo Yesu Kristo
-          alitununulia pale Kalvari
-          (Isaya 53:5; Marko 6:13; Yakobo 5:14-15; 1 Petro 2:24).
-        </p>
-      </div>
 
     </div>
 
@@ -1439,7 +1140,6 @@ footer .copyright {
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>8. Baptism and the Holy Spirit</h3>
         <p>
           We believe in water baptism and baptism in the Holy Spirit.
@@ -1455,25 +1155,7 @@ footer .copyright {
           and power to flow out of your spirit for the needs of others
           (John 7:37-38).
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>8. Ubatizo na Roho Mtakatifu</h3>
-        <p>
-          Tunaamini katika ubatizo wa maji na ubatizo wa Roho Mtakatifu.
-          Pia tunaamini katika kunena kwa lugha kama Roho wa Mungu
-          anavyomjalia mtu kutamka (Matendo 2:4). Wote wanaokuwa sehemu
-          ya mwili wa Kristo hufanyika hivyo kwa njia ya kubatizwa
-          katika Roho Mtakatifu (1 Wakorintho 12:13; Warumi 8:9).
-          Unapobatizwa katika Roho Mtakatifu, nguvu za Mungu zitakuja
-          juu yako kama zilivyowajia wanafunzi wa kwanza siku ya
-          Pentekoste (Matendo 2:1-4). Nguvu za Mungu zinapokujilia,
-          Roho Mtakatifu ataathiri kila sehemu ya maisha yako.
-          Roho Mtakatifu husababisha mito ya uzima, furaha, upendo,
-          amani na nguvu kutiririka kutoka ndani ya roho yako kwa ajili
-          ya mahitaji ya wengine (Yohana 7:37-38).
-        </p>
-      </div>
 
     </div>
 
@@ -1482,7 +1164,6 @@ footer .copyright {
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>9. The Lord's Supper</h3>
         <p>
           We believe in the Lord's Supper as was celebrated by Jesus Christ
@@ -1497,24 +1178,7 @@ footer .copyright {
           Supper (2 Peter 1:4), upon the instruction of the Holy Spirit
           (1 Corinthians 2:10; 11:26-31).
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>9. Meza ya Bwana</h3>
-        <p>
-          Tunaamini katika Meza ya Bwana kama ilivyoadhimishwa na Yesu
-          Kristo pamoja na wanafunzi Wake katika Mathayo 26:26-28:
-          "Nao walipokuwa wakila, Yesu alitwaa mkate, akabariki,
-          akaumega, akawapa wanafunzi Wake, akasema, Twaeni mle;
-          huu ndio mwili Wangu. Akakitwaa kikombe, akashukuru, akawapa,
-          akisema, Nyweni nyote katika hiki; kwa maana hii ndiyo damu
-          Yangu ya agano, imwagikayo kwa ajili ya wengi kwa ondoleo
-          la dhambi." Kama wanafunzi wa zamani walivyoelekezwa na Yesu
-          Kristo kushiriki Meza ya Bwana, sisi pia tunashiriki Meza
-          ya Bwana (2 Petro 1:4), kwa maelekezo ya Roho Mtakatifu
-          (1 Wakorintho 2:10; 11:26-31).
-        </p>
-      </div>
 
     </div>
 
@@ -1523,22 +1187,12 @@ footer .copyright {
 
     <div class="faith-category">
 
-      <div class="lang-content" data-language="en">
         <h3>10. The Second Coming of Christ</h3>
         <p>
           We believe Jesus Christ will come again, just as He went away
           (Acts 1:11; 1 Thessalonians 4:16-17).
         </p>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <h3>10. Kurudi kwa Yesu Kristo</h3>
-        <p>
-          Tunaamini kwamba Yesu Kristo atakuja tena, kama vile
-          alivyoondoka kwenda mbinguni
-          (Matendo 1:11; 1 Wathesalonike 4:16-17).
-        </p>
-      </div>
 
     </div>
 
@@ -1555,21 +1209,12 @@ footer .copyright {
 <section id="books">
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Books & Christian Resources</h2>
       <p class="section-description">
         Explore biblical teachings, faith-building literature
         and spiritual encouragement by Apostle Imani.
       </p>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Vitabu na Rasilimali za Kikristo</h2>
-      <p class="section-description">
-        Gundua mafundisho ya Biblia, vitabu vinavyojenga imani
-        na ujumbe wa kutia moyo kiroho kutoka kwa Apostle Imani.
-      </p>
-    </div>
 
     <div class="cards">
 
@@ -1605,23 +1250,13 @@ footer .copyright {
 
     <div style="text-align:center;margin-top:30px">
 
-      <div class="lang-content" data-language="en">
         <a href="https://selar.com/m/apostleimani"
            class="btn"
            target="_blank"
            rel="noopener noreferrer">
           Explore Our Books
         </a>
-      </div>
 
-      <div class="lang-content" data-language="sw" hidden>
-        <a href="https://selar.com/m/apostleimani"
-           class="btn"
-           target="_blank"
-           rel="noopener noreferrer">
-          Tazama Vitabu Vyetu
-        </a>
-      </div>
 
     </div>
 
@@ -1634,21 +1269,12 @@ footer .copyright {
 <section class="dark-section" id="media">
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Media & Ministry Messages</h2>
       <p class="section-description">
         Receive biblical encouragement, Christian teachings
         and ministry updates.
       </p>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Habari na Ujumbe wa Huduma</h2>
-      <p class="section-description">
-        Pokea mafundisho ya Biblia, ujumbe wa Kikristo
-        na taarifa za huduma.
-      </p>
-    </div>
 
     <iframe
       class="video-frame"
@@ -1678,7 +1304,6 @@ footer .copyright {
 <section class="linktree-section">
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Connect With Apostle Imani</h2>
       <p>
         Find our official ministry platforms, books, social media,
@@ -1690,21 +1315,7 @@ footer .copyright {
          class="btn">
         Visit Our Linktree
       </a>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Ungana na Apostle Imani</h2>
-      <p>
-        Pata majukwaa rasmi ya huduma yetu, vitabu, mitandao ya kijamii,
-        rasilimali za Kikristo na taarifa nyingine za huduma sehemu moja.
-      </p>
-      <a href="https://linktr.ee/apostleimani"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="btn">
-        Tembelea Linktree Yetu
-      </a>
-    </div>
 
   </div>
 </section>
@@ -1715,23 +1326,13 @@ footer .copyright {
 <section>
   <div class="container" style="text-align:center">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Partner With the Ministry</h2>
       <p class="section-description">
         Join us in supporting the proclamation of the Gospel,
         discipleship and the work of the Great Commission.
       </p>
       <a href="give.html" class="btn">Giving & Partnership</a>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Shirikiana na Huduma</h2>
-      <p class="section-description">
-        Ungana nasi katika kuunga mkono utangazaji wa Injili,
-        uanafunzi na kazi ya Utume Mkuu.
-      </p>
-      <a href="give.html" class="btn">Utoaji na Ushirikiano</a>
-    </div>
 
   </div>
 </section>
@@ -1742,21 +1343,12 @@ footer .copyright {
 <section class="contact-section" id="contact">
   <div class="container">
 
-    <div class="lang-content" data-language="en">
       <h2 class="section-heading">Connect With Us</h2>
       <p class="section-description">
         For ministry enquiries, prayer, partnership and communication,
         please contact us.
       </p>
-    </div>
 
-    <div class="lang-content" data-language="sw" hidden>
-      <h2 class="section-heading">Wasiliana Nasi</h2>
-      <p class="section-description">
-        Kwa maswali kuhusu huduma, maombi, ushirikiano
-        na mawasiliano, tafadhali wasiliana nasi.
-      </p>
-    </div>
 
     <div class="contact-details">
 
@@ -1830,24 +1422,18 @@ footer .copyright {
   <div class="footer-brand">APOSTLE IMANI</div>
   <div class="footer-subtitle">MINISTRIES</div>
 
-  <div class="lang-content" data-language="en">
     <p>Proclaiming Christ. Transforming Lives.</p>
     <p>A Ministry of Faith, Revival and the Great Commission.</p>
-  </div>
 
-  <div class="lang-content" data-language="sw" hidden>
-    <p>Kumtangaza Kristo. Kubadilisha Maisha.</p>
-    <p>Huduma ya Imani, Uamsho na Utume Mkuu.</p>
-  </div>
 
   <div class="footer-links">
-    <a href="#home">Home / Mwanzo</a>
-    <a href="#about">About / Kuhusu Sisi</a>
-    <a href="#ministries">Ministries / Huduma</a>
-    <a href="#faith">Faith / Imani</a>
-    <a href="#books">Books / Vitabu</a>
-    <a href="#contact">Contact / Mawasiliano</a>
-    <a href="give.html">Give / Toa</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#ministries">Ministries</a>
+    <a href="#faith">Faith</a>
+    <a href="#books">Books</a>
+    <a href="#contact">Contact</a>
+    <a href="give.html">Give</a>
     <a href="https://linktr.ee/apostleimani"
        target="_blank"
        rel="noopener noreferrer">Linktree</a>
@@ -1865,53 +1451,8 @@ footer .copyright {
 </footer>
 
 
-<!-- LANGUAGE SWITCHER -->
-
 <script>
-let currentLanguage = "en";
-
-function setLanguage(language) {
-  currentLanguage = language;
-
-  document.documentElement.lang = language;
-
-  document.querySelectorAll("[data-language]").forEach(element => {
-    element.hidden = element.getAttribute("data-language") !== language;
-  });
-
-  document.querySelectorAll("[data-en][data-sw]").forEach(element => {
-    element.textContent = element.getAttribute("data-" + language);
-  });
-
-  const button = document.getElementById("languageButton");
-
-  button.textContent = language === "en" ? "Kiswahili" : "English";
-
-  try {
-    localStorage.setItem("apostleImaniLanguage", language);
-  } catch (error) {
-    // The language switcher still works if storage is unavailable.
-  }
-}
-
-function toggleLanguage() {
-  setLanguage(currentLanguage === "en" ? "sw" : "en");
-}
-
-document.getElementById("year").textContent =
-  new Date().getFullYear();
-
-try {
-  const savedLanguage = localStorage.getItem("apostleImaniLanguage");
-
-  if (savedLanguage === "sw" || savedLanguage === "en") {
-    setLanguage(savedLanguage);
-  } else {
-    setLanguage("en");
-  }
-} catch (error) {
-  setLanguage("en");
-}
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 <script>
