@@ -401,6 +401,31 @@ nav a:hover {
   margin-top:8px;
 }
 
+.book-card .book-cover {
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:10px;
+  margin:0 0 18px;
+}
+
+.books-banner {
+  width:100%;
+  max-width:1000px;
+  height:auto;
+  margin:0 auto 24px;
+  border-radius:12px;
+}
+
+.sr-only {
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  white-space:nowrap;
+}
+
 /* VIDEO */
 
 .video-frame {
@@ -1040,7 +1065,7 @@ footer .copyright {
       <div class="welcome-text">
         <h2>📩 WELCOME TO THE FAMILY OF FAITH!</h2>
         <p>
-          ✨ If you received Jesus Christ as your Lord and Saviour tonight,
+          ✨ If you received Jesus Christ as your Lord and Saviour today,
           we rejoice with you! This is the beginning of a powerful walk
           with God.
         </p>
@@ -1507,7 +1532,11 @@ footer .copyright {
 <section id="books">
   <div class="container">
 
-      <h2 class="section-heading">Books & Christian Resources</h2>
+      <h2 class="sr-only">Books & Christian Resources</h2>
+      <img class="books-banner"
+           src="images/books-header.jpg"
+           width="2055" height="765"
+           alt="Books by Apostle Imani. Faith. Calling. Purpose. Available now on Amazon, Selar and Snippe.">
       <p class="section-description">
         Explore biblical teachings, faith-building literature
         and spiritual encouragement by Apostle Imani.
@@ -1517,6 +1546,7 @@ footer .copyright {
     <div class="cards">
 
       <div class="card book-card">
+        <img class="book-cover" src="images/book-divine-calling.jpg" alt="Divine Calling by Apostle Imani" loading="lazy">
         <h3>Divine Calling</h3>
         <p class="book-subtitle">
           The Journey of Apostle Imani and Friends of Faith.
@@ -1524,6 +1554,7 @@ footer .copyright {
       </div>
 
       <div class="card book-card">
+        <img class="book-cover" src="images/book-revelation-of-faith.jpg" alt="The Revelation of Faith by Apostle Imani" loading="lazy">
         <h3>The Revelation of Faith</h3>
         <p class="book-subtitle">
           Revealing the Mystery of Faith Through Love and the Word.
@@ -1531,6 +1562,7 @@ footer .copyright {
       </div>
 
       <div class="card book-card">
+        <img class="book-cover" src="images/book-faith-in-christ.jpg" alt="Faith in Christ by Apostle Imani" loading="lazy">
         <h3>Faith in Christ</h3>
         <p class="book-subtitle">
           To All Who Believe: The Life-Changing Power of Believing in Him.
@@ -1538,6 +1570,7 @@ footer .copyright {
       </div>
 
       <div class="card book-card">
+        <img class="book-cover" src="images/book-from-the-mountain.jpg" alt="From the Mountain to the Ministry by Apostle Imani" loading="lazy">
         <h3>From the Mountain to the Ministry</h3>
         <p class="book-subtitle">
           A journey of prayer, fasting, calling and ministry.
