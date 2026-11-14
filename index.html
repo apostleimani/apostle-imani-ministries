@@ -771,6 +771,50 @@ footer .copyright {
   background:#000;
 }
 
+/* LOGO INTRO (sits right after the header) */
+
+.logo-intro {
+  background:var(--purple-dark);
+  padding:28px 0;
+}
+
+.logo-intro-frame {
+  position:relative;
+  width:100%;
+  max-width:1120px;
+  margin:0 auto;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  background:var(--purple-dark);
+}
+
+.logo-intro-frame video {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  background:var(--purple-dark);
+}
+
+.logo-intro-sound {
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  padding:9px 18px;
+  border:1px solid var(--gold-light);
+  border-radius:30px;
+  background:rgba(22,13,35,.82);
+  color:var(--gold-light);
+  font-size:15px;
+  cursor:pointer;
+}
+
+@media(max-width:600px) {
+  .logo-intro { padding:16px 0; }
+  .logo-intro-sound { right:8px; bottom:8px; padding:7px 14px; font-size:13px; }
+}
+
 /* RESPONSIVE */
 
 @media(max-width:900px) {
@@ -889,6 +933,22 @@ footer .copyright {
 
 
 <main>
+
+<!-- LOGO INTRO VIDEO (stays hidden until videos/apostle-imani-logo-intro.mp4 is uploaded) -->
+
+<section class="logo-intro" id="logo-intro" hidden>
+  <div class="container">
+    <div class="logo-intro-frame">
+      <video id="logoIntroVideo" autoplay muted playsinline preload="auto"
+             poster="images/logo-intro-poster.jpg"
+             aria-label="Apostle Imani Ministries logo intro">
+        <source src="videos/apostle-imani-logo-intro.mp4" type="video/mp4">
+      </video>
+      <button id="logoIntroSound" class="logo-intro-sound" type="button">&#128266; Tap for sound</button>
+    </div>
+  </div>
+</section>
+
 
 <!-- NEW MONTH GREETING (delete this whole section in December) -->
 
@@ -1790,6 +1850,29 @@ footer .copyright {
 
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+(function () {
+  var section = document.getElementById("logo-intro");
+  var video = document.getElementById("logoIntroVideo");
+  var btn = document.getElementById("logoIntroSound");
+  if (!section || !window.fetch) return;
+  fetch("videos/apostle-imani-logo-intro.mp4", { method: "HEAD" })
+    .then(function (response) {
+      if (response.ok) { section.hidden = false; video.play().catch(function () {}); }
+    })
+    .catch(function () {});
+  btn.addEventListener("click", function () {
+    if (video.muted) {
+      video.muted = false; video.currentTime = 0; video.play();
+      btn.innerHTML = "&#128263; Mute";
+    } else {
+      video.muted = true;
+      btn.innerHTML = "&#128266; Tap for sound";
+    }
+  });
+})();
 </script>
 
 <script>
