@@ -796,8 +796,9 @@ nav a.nav-give:hover {
   overflow-x:auto;
   scroll-snap-type:x mandatory;
   scroll-padding-left:4px;
-  scroll-behavior:smooth;
   -webkit-overflow-scrolling:touch;
+  overscroll-behavior-x:contain;
+  touch-action:pan-x pan-y;
   scrollbar-width:none;
   padding:10px 4px 18px;
 }
@@ -807,10 +808,11 @@ nav a.nav-give:hover {
 .aim-track > * {
   flex:0 0 calc((100% - (var(--pv) - 1) * 22px) / var(--pv));
   scroll-snap-align:start;
+  scroll-snap-stop:always;
   margin:0 !important;
 }
 
-.aim-fit .aim-track { align-items:flex-start; transition:height .4s ease; }
+.aim-fit .aim-track { align-items:flex-start; transition:height .3s ease; }
 
 .aim-ctrl {
   display:flex;
@@ -1021,9 +1023,9 @@ nav a.nav-give:hover {
 .founding-step h3 small{display:block;color:#8a641d;font-size:12px;letter-spacing:2px;margin-bottom:2px}
 .founding-step p{color:var(--text);font-size:15.5px}
 .founding-slider{position:sticky;top:110px;border-radius:20px;overflow:hidden;background:var(--purple-dark);box-shadow:var(--shadow);border:4px solid #fff}
-.founding-stage{position:relative;aspect-ratio:4/5;overflow:hidden}
-.founding-slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .7s ease,visibility .7s;margin:0}
-.founding-slide.is-active{opacity:1;visibility:visible;z-index:1}
+.founding-stage{position:relative;aspect-ratio:4/5;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;touch-action:pan-x pan-y;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.founding-stage::-webkit-scrollbar{display:none}
+.founding-slide{position:relative;flex:0 0 100%;height:100%;overflow:hidden;scroll-snap-align:start;scroll-snap-stop:always;margin:0}
 .founding-slide::before{content:"";position:absolute;inset:-30px;background:var(--bg) center/cover;filter:blur(22px);opacity:.55}
 .founding-slide img{position:relative;width:100%;height:calc(100% - 96px);object-fit:contain;display:block}
 .founding-slide figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;height:96px;padding:12px 18px 54px;color:#fff;font-size:14px;line-height:1.45;background:var(--purple-dark)}
@@ -1395,15 +1397,16 @@ nav a.nav-give:hover {
     <h2 class="section-heading">How and When Apostle Imani Ministries Was Founded</h2>
     <p class="section-description">
       The ministry was born from forty days and nights of fasting and prayer
-      on a secluded mountain from Sunday 11 November to Thursday 20 December 2018, and began in
-      Dar es Salaam, Tanzania, with the firm belief that Jesus Christ alone is its Founder.
+      on Mlima wa Mungu (the Mountain of God) in Kihonda, Morogoro Region, Tanzania, from Sunday 11 November to
+      Thursday 20 December 2018. After the fast he returned to Dar es Salaam, where the ministry began,
+      with the firm belief that Jesus Christ alone is its Founder.
     </p>
 
     <div class="founding-facts">
       <div class="founding-fact"><span>When</span><b>11 Nov to 20 Dec 2018</b></div>
-      <div class="founding-fact"><span>Where</span><b>Dar es Salaam, Tanzania</b></div>
+      <div class="founding-fact"><span>Place of fasting</span><b>Mlima wa Mungu, Kihonda, Morogoro Region</b></div>
       <div class="founding-fact"><span>Founder</span><b>Jesus Christ</b></div>
-      <div class="founding-fact"><span>First companions</span><b>The Friends of Faith</b></div>
+      <div class="founding-fact"><span>Ministry began in</span><b>Dar es Salaam, Tanzania</b></div>
     </div>
 
     <div class="founding-layout">
@@ -1418,9 +1421,9 @@ nav a.nav-give:hover {
           before the mountain.</p>
         </div>
         <div class="founding-step">
-          <h3><small>11 NOVEMBER TO 20 DECEMBER 2018</small>Forty Days on the Prayer Mountain</h3>
-          <p>Longing to know God's plan, he went up a secluded prayer mountain
-          for forty days and nights of fasting, prayer and meditation on the Word,
+          <h3><small>11 NOVEMBER TO 20 DECEMBER 2018</small>Forty Days on Mlima wa Mungu</h3>
+          <p>Longing to know God's plan, he went up Mlima wa Mungu (the Mountain of God)
+          in Kihonda, Morogoro Region, for forty days and nights of fasting, prayer and meditation on the Word,
           from Sunday 11 November to Thursday 20 December 2018, following the pattern of Moses, Elijah and Jesus.</p>
         </div>
         <div class="founding-step">
@@ -1432,11 +1435,11 @@ nav a.nav-give:hover {
         <div class="founding-step">
           <h3><small>THE LAST DAY</small>The Descent with Friends of Faith</h3>
           <p>On 20 December 2018, the last day of the fast, friends of faith Paschal Wilson and Sebastian Paul
-          helped him down the mountain in a journey of about nine hours.</p>
+          helped him down Mlima wa Mungu in a journey of about nine hours.</p>
         </div>
         <div class="founding-step">
           <h3><small>THE BEGINNING</small>The Ministry Is Founded</h3>
-          <p>Returning to Dar es Salaam with a deep sense of purpose, he founded
+          <p>After coming down from Mlima wa Mungu, he returned to Dar es Salaam with a deep sense of purpose and founded
           Apostle Imani Ministries, believing that only Jesus Christ is the Founder.
           The book also records the influence of the late Senior Prophet T.B. Joshua
           in his anointing. Friends and partners soon gathered, not to praise a man,
@@ -1446,7 +1449,7 @@ nav a.nav-give:hover {
 
       <div class="founding-slider" id="founding-slider" aria-roledescription="carousel" aria-label="Photos from the forty days on the mountain">
         <div class="founding-stage">
-        <figure class="founding-slide is-active" style="--bg:url('images/founding-1.jpg')">
+        <figure class="founding-slide" style="--bg:url('images/founding-1.jpg')">
           <img src="images/founding-1.jpg" alt="Collage of Apostle Imani during his 40 days on the mountain, with the title Mountain Top Experience" loading="lazy">
           <figcaption>Mountain top experience: forty days and nights of fasting and prayer.</figcaption>
         </figure>
@@ -1487,23 +1490,27 @@ nav a.nav-give:hover {
 <script>
 (function(){
   var root=document.getElementById('founding-slider'); if(!root)return;
-  var slides=[].slice.call(root.querySelectorAll('.founding-slide'));
-  var dots=root.querySelector('.founding-dots'); var cur=0,timer=null;
+  var stage=root.querySelector('.founding-stage');
+  var slides=[].slice.call(stage.querySelectorAll('.founding-slide'));
+  var dots=root.querySelector('.founding-dots'); var timer=null,resume=null,last=-1;
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function show(i){cur=(i+slides.length)%slides.length;
-    slides.forEach(function(s,k){s.classList.toggle('is-active',k===cur);s.setAttribute('aria-hidden',k!==cur);});
-    [].forEach.call(dots.children,function(d,k){d.setAttribute('aria-current',k===cur);});}
-  function stop(){clearInterval(timer);}
-  function start(){stop();if(!reduce)timer=setInterval(function(){show(cur+1);},5000);}
+  function cur(){return Math.min(slides.length-1,Math.max(0,Math.round(stage.scrollLeft/stage.clientWidth)));}
+  function mark(){var c=cur();if(c===last)return;last=c;
+    [].forEach.call(dots.children,function(d,k){d.setAttribute('aria-current',k===c);});
+    slides.forEach(function(s,k){s.setAttribute('aria-hidden',k!==c);});}
+  function go(i){i=(i+slides.length)%slides.length;stage.scrollTo({left:i*stage.clientWidth,behavior:'smooth'});}
+  function stop(){clearInterval(timer);timer=null;}
+  function start(){stop();if(!reduce)timer=setInterval(function(){if(!document.hidden)go(cur()+1);},5000);}
   slides.forEach(function(s,k){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Photo '+(k+1));
-    b.addEventListener('click',function(){show(k);start();});dots.appendChild(b);});
-  root.querySelector('[data-prev]').addEventListener('click',function(){show(cur-1);start();});
-  root.querySelector('[data-next]').addEventListener('click',function(){show(cur+1);start();});
+    b.addEventListener('click',function(){go(k);start();});dots.appendChild(b);});
+  root.querySelector('[data-prev]').addEventListener('click',function(){go(cur()-1);start();});
+  root.querySelector('[data-next]').addEventListener('click',function(){go(cur()+1);start();});
+  stage.addEventListener('scroll',mark,{passive:true});
   root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',start);
-  var x0=null;root.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
-  root.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
-    if(Math.abs(dx)>40){show(cur+(dx<0?1:-1));start();}x0=null;});
-  show(0);start();
+  root.addEventListener('touchstart',function(){stop();clearTimeout(resume);},{passive:true});
+  root.addEventListener('touchend',function(){clearTimeout(resume);resume=setTimeout(start,4000);},{passive:true});
+  window.addEventListener('resize',function(){stage.scrollLeft=cur()*stage.clientWidth;});
+  mark();start();
 })();
 </script>
 
@@ -2230,8 +2237,11 @@ document.getElementById("year").textContent = new Date().getFullYear();
     function fitHeight() {
       if (fit) track.style.height = (kids[cur()].offsetHeight + 28) + "px";
     }
+    var lastMark = -1;
     function mark() {
       var c = cur();
+      if (c === lastMark) return;
+      lastMark = c;
       dots.forEach(function (d, i) { d.classList.toggle("active", i === c); });
       fitHeight();
     }
@@ -2241,7 +2251,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
     }
     function build() {
       box.style.setProperty("--pv", perView());
-      dotsBox.innerHTML = ""; dots = [];
+      dotsBox.innerHTML = ""; dots = []; lastMark = -1;
       for (var i = 0; i < pages(); i++) {
         (function (i) {
           var b = document.createElement("button");
@@ -2271,10 +2281,10 @@ document.getElementById("year").textContent = new Date().getFullYear();
     track.addEventListener("scroll", mark, { passive: true });
     box.addEventListener("mouseenter", stop);
     box.addEventListener("mouseleave", start);
-    box.addEventListener("touchstart", stop, { passive: true });
+    box.addEventListener("touchstart", function () { stop(); clearTimeout(resumeTimer); }, { passive: true });
     box.addEventListener("touchend", pauseThenResume, { passive: true });
     window.addEventListener("resize", function () { build(); go(cur()); });
-    window.addEventListener("load", mark);
+    window.addEventListener("load", function () { lastMark = -1; mark(); });
 
     build(); start();
   }
