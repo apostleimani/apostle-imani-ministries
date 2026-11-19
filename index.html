@@ -991,6 +991,50 @@ nav a.nav-give:hover {
     font-size:14px;
   }
 }
+
+/* PAYPAL DONATION */
+.give-section{background:var(--white);text-align:center}
+.give-card{max-width:640px;margin:0 auto;background:var(--cream);border:1px solid var(--border);border-radius:22px;padding:42px 28px;box-shadow:var(--shadow)}
+.paypal-badge{display:inline-block;background:#fff;border-radius:60px;padding:14px 38px;margin:6px 0 26px;box-shadow:0 8px 24px rgba(25,14,40,.14);font-size:30px;font-weight:bold;font-style:italic;letter-spacing:-.5px;color:#003087}
+.paypal-badge span{color:#009cde}
+.give-card h3{color:var(--purple);font-size:clamp(21px,3.4vw,27px);line-height:1.3;margin-bottom:16px}
+.give-card h3 em{font-style:normal;color:#003087}
+.give-handle{display:inline-block;font-size:clamp(17px,3vw,21px);font-weight:bold;color:#1a3bd8;word-break:break-all;margin:4px 0 8px}
+.give-note{color:var(--muted);font-size:15px;margin:12px auto 22px;max-width:480px}
+.btn-paypal{background:#2f2ff0;border-color:#2f2ff0;color:#fff;font-size:16px;padding:15px 34px}
+.btn-copy{background:transparent;color:var(--purple);border:1px solid var(--gold);cursor:pointer;font-size:14px}
+.btn-copy:hover{background:var(--gold)}
+
+/* OUR STORY / FOUNDING */
+.founding-section{background:#fff}
+.founding-eyebrow{display:block;text-align:center;color:#8a641d;letter-spacing:4px;font-size:13px;font-weight:bold;margin-bottom:8px}
+.founding-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:0 auto 46px}
+.founding-fact{background:var(--cream);border:1px solid var(--border);border-bottom:4px solid var(--gold);border-radius:14px;padding:18px 20px;text-align:center}
+.founding-fact b{display:block;color:var(--purple);font-size:19px;line-height:1.3}
+.founding-fact span{color:var(--muted);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+.founding-layout{display:grid;grid-template-columns:1.05fr 1fr;gap:46px;align-items:start}
+.founding-timeline{position:relative;padding-left:34px}
+.founding-timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gold),rgba(213,173,89,.15))}
+.founding-step{position:relative;margin-bottom:28px}
+.founding-step::before{content:"";position:absolute;left:-34px;top:6px;width:20px;height:20px;border-radius:50%;background:var(--gold);border:4px solid #fff;box-shadow:0 0 0 2px var(--gold)}
+.founding-step h3{color:var(--purple);font-size:20px;margin-bottom:6px}
+.founding-step h3 small{display:block;color:#8a641d;font-size:12px;letter-spacing:2px;margin-bottom:2px}
+.founding-step p{color:var(--text);font-size:15.5px}
+.founding-slider{position:sticky;top:110px;border-radius:20px;overflow:hidden;background:var(--purple-dark);box-shadow:var(--shadow);border:4px solid #fff}
+.founding-stage{position:relative;aspect-ratio:4/5;overflow:hidden}
+.founding-slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .7s ease,visibility .7s;margin:0}
+.founding-slide.is-active{opacity:1;visibility:visible;z-index:1}
+.founding-slide::before{content:"";position:absolute;inset:-30px;background:var(--bg) center/cover;filter:blur(22px);opacity:.55}
+.founding-slide img{position:relative;width:100%;height:calc(100% - 96px);object-fit:contain;display:block}
+.founding-slide figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;height:96px;padding:12px 18px 54px;color:#fff;font-size:14px;line-height:1.45;background:var(--purple-dark)}
+.founding-controls{position:absolute;z-index:4;left:0;right:0;bottom:14px;display:flex;align-items:center;justify-content:space-between;padding:0 14px}
+.founding-controls button{width:38px;height:38px;border-radius:50%;border:1px solid var(--gold);background:rgba(22,13,35,.8);color:var(--gold);font-size:20px;cursor:pointer}
+.founding-dots{display:flex;gap:8px}
+.founding-dots button{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.5)}
+.founding-dots button[aria-current="true"]{background:var(--gold);transform:scale(1.4)}
+.founding-verse{margin:46px auto 0;max-width:720px;text-align:center;background:var(--cream);border-left:5px solid var(--gold);border-radius:13px;padding:22px 26px;color:var(--purple);font-size:18px}
+.founding-verse small{display:block;margin-top:6px;color:var(--muted);font-size:14px}
+@media(max-width:900px){.founding-layout{grid-template-columns:1fr}.founding-slider{position:relative;top:0;order:-1}}
 </style>
 </head>
 
@@ -1340,6 +1384,128 @@ nav a.nav-give:hover {
     </div>
   </div>
 </section>
+
+
+<!-- OUR STORY: HOW AND WHEN THE MINISTRY WAS FOUNDED -->
+
+<section class="founding-section" id="founding">
+  <div class="container">
+
+    <span class="founding-eyebrow">OUR STORY</span>
+    <h2 class="section-heading">How and When Apostle Imani Ministries Was Founded</h2>
+    <p class="section-description">
+      The ministry was born from forty days and nights of fasting and prayer
+      on a secluded mountain from Sunday 11 November to Thursday 20 December 2018, and began in
+      Dar es Salaam, Tanzania, with the firm belief that Jesus Christ alone is its Founder.
+    </p>
+
+    <div class="founding-facts">
+      <div class="founding-fact"><span>When</span><b>11 Nov to 20 Dec 2018</b></div>
+      <div class="founding-fact"><span>Where</span><b>Dar es Salaam, Tanzania</b></div>
+      <div class="founding-fact"><span>Founder</span><b>Jesus Christ</b></div>
+      <div class="founding-fact"><span>First companions</span><b>The Friends of Faith</b></div>
+    </div>
+
+    <div class="founding-layout">
+
+      <div class="founding-timeline">
+        <div class="founding-step">
+          <h3><small>THE EARLY CALLING</small>Seeds of a Divine Call</h3>
+          <p>From his school days at St. Marks Secondary School in Dar es Salaam,
+          Julius Constantine Mushi taught his friends the Bible. Over about seven years,
+          different men of God spoke prophetic words over his life, and dreams
+          confirmed the calling. He worked as a farmer and at a microfinance bank
+          before the mountain.</p>
+        </div>
+        <div class="founding-step">
+          <h3><small>11 NOVEMBER TO 20 DECEMBER 2018</small>Forty Days on the Prayer Mountain</h3>
+          <p>Longing to know God's plan, he went up a secluded prayer mountain
+          for forty days and nights of fasting, prayer and meditation on the Word,
+          from Sunday 11 November to Thursday 20 December 2018, following the pattern of Moses, Elijah and Jesus.</p>
+        </div>
+        <div class="founding-step">
+          <h3><small>ON THE MOUNTAIN</small>Visions and Commission</h3>
+          <p>As recorded in his book <em>Divine Calling</em>, he received visions
+          during the fast. In one he was given the name "Apostle Imani" and handed
+          a cross as his commission to proclaim the Gospel to the nations (Mark 16:15).</p>
+        </div>
+        <div class="founding-step">
+          <h3><small>THE LAST DAY</small>The Descent with Friends of Faith</h3>
+          <p>On 20 December 2018, the last day of the fast, friends of faith Paschal Wilson and Sebastian Paul
+          helped him down the mountain in a journey of about nine hours.</p>
+        </div>
+        <div class="founding-step">
+          <h3><small>THE BEGINNING</small>The Ministry Is Founded</h3>
+          <p>Returning to Dar es Salaam with a deep sense of purpose, he founded
+          Apostle Imani Ministries, believing that only Jesus Christ is the Founder.
+          The book also records the influence of the late Senior Prophet T.B. Joshua
+          in his anointing. Friends and partners soon gathered, not to praise a man,
+          but to glorify the God who heals the broken-hearted.</p>
+        </div>
+      </div>
+
+      <div class="founding-slider" id="founding-slider" aria-roledescription="carousel" aria-label="Photos from the forty days on the mountain">
+        <div class="founding-stage">
+        <figure class="founding-slide is-active" style="--bg:url('images/founding-1.jpg')">
+          <img src="images/founding-1.jpg" alt="Collage of Apostle Imani during his 40 days on the mountain, with the title Mountain Top Experience" loading="lazy">
+          <figcaption>Mountain top experience: forty days and nights of fasting and prayer.</figcaption>
+        </figure>
+        <figure class="founding-slide" style="--bg:url('images/founding-2.jpg')">
+          <img src="images/founding-2.jpg" alt="Apostle Imani smiling on a forested mountain, a close-up portrait, and a moment of rest in a white robe" loading="lazy">
+          <figcaption>On the mountain, seeking God's purpose for his life.</figcaption>
+        </figure>
+        <figure class="founding-slide" style="--bg:url('images/founding-3.jpg')">
+          <img src="images/founding-3.jpg" alt="Apostle Imani in a white jacket with a walking stick, supported by a friend on a muddy mountain path" loading="lazy">
+          <figcaption>The descent: Apostle Imani coming down the mountain, supported by a friend of faith.</figcaption>
+        </figure>
+        <figure class="founding-slide" style="--bg:url('images/founding-4.jpg')">
+          <img src="images/founding-4.jpg" alt="Apostle Imani wrapped in a white robe with his hand over his heart" loading="lazy">
+          <figcaption>In the last week of the forty days and nights.</figcaption>
+        </figure>
+        <figure class="founding-slide" style="--bg:url('images/founding-5.jpg')">
+          <img src="images/founding-5.jpg" alt="Apostle Imani speaking beside a small fire among the trees on the mountain" loading="lazy">
+          <figcaption>A moment of sharing and prayer on the mountain.</figcaption>
+        </figure>
+        </div>
+        <div class="founding-controls">
+          <button type="button" data-prev aria-label="Previous photo">&#8249;</button>
+          <div class="founding-dots"></div>
+          <button type="button" data-next aria-label="Next photo">&#8250;</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="founding-verse">
+      &ldquo;Here am I; send me.&rdquo;
+      <small>Isaiah 6:8 &middot; Source: <em>Divine Calling</em> by Apostle Imani</small>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function(){
+  var root=document.getElementById('founding-slider'); if(!root)return;
+  var slides=[].slice.call(root.querySelectorAll('.founding-slide'));
+  var dots=root.querySelector('.founding-dots'); var cur=0,timer=null;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function show(i){cur=(i+slides.length)%slides.length;
+    slides.forEach(function(s,k){s.classList.toggle('is-active',k===cur);s.setAttribute('aria-hidden',k!==cur);});
+    [].forEach.call(dots.children,function(d,k){d.setAttribute('aria-current',k===cur);});}
+  function stop(){clearInterval(timer);}
+  function start(){stop();if(!reduce)timer=setInterval(function(){show(cur+1);},5000);}
+  slides.forEach(function(s,k){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Photo '+(k+1));
+    b.addEventListener('click',function(){show(k);start();});dots.appendChild(b);});
+  root.querySelector('[data-prev]').addEventListener('click',function(){show(cur-1);start();});
+  root.querySelector('[data-next]').addEventListener('click',function(){show(cur+1);start();});
+  root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',start);
+  var x0=null;root.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+  root.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>40){show(cur+(dx<0?1:-1));start();}x0=null;});
+  show(0);start();
+})();
+</script>
 
 
 <!-- VISION AND MISSION -->
@@ -1816,21 +1982,54 @@ nav a.nav-give:hover {
 </section>
 
 
-<!-- GIVE AND PARTNER -->
+<!-- GIVE VIA PAYPAL -->
 
-<section>
-  <div class="container" style="text-align:center">
+<section class="give-section" id="give">
+  <div class="container">
 
-      <h2 class="section-heading">Partner With the Ministry</h2>
-      <p class="section-description">
-        Join us in supporting the proclamation of the Gospel,
-        discipleship and the work of the Great Commission.
+    <h2 class="section-heading">Partner With the Ministry</h2>
+    <p class="section-description">
+      Join us in supporting the proclamation of the Gospel,
+      discipleship and the work of the Great Commission.
+    </p>
+
+    <div class="give-card">
+      <div class="paypal-badge" aria-label="PayPal">Pay<span>Pal</span></div>
+
+      <h3>For donations via <em>PayPal</em>, use the details below:</h3>
+
+      <a class="give-handle" id="paypal-link"
+         href="https://www.paypal.me/JuliusMushi"
+         target="_blank" rel="noopener noreferrer">paypal.me/JuliusMushi</a>
+
+      <p class="give-note">
+        NB: Copy the PayPal link or username and enter it on the page
+        when you click the button below.
       </p>
-      <a href="give.html" class="btn">Giving & Partnership</a>
 
+      <a class="btn btn-paypal"
+         href="https://www.paypal.me/JuliusMushi"
+         target="_blank" rel="noopener noreferrer">Donate via PayPal</a>
+      <button type="button" class="btn btn-copy" id="copy-paypal">Copy PayPal Link</button>
+
+      <p style="margin-top:18px"><a href="give.html" style="color:var(--purple);text-decoration:underline">Giving &amp; Partnership</a></p>
+    </div>
 
   </div>
 </section>
+
+<script>
+(function(){
+  var b=document.getElementById('copy-paypal');
+  if(!b)return;
+  b.addEventListener('click',function(){
+    var t='https://www.paypal.me/JuliusMushi';
+    var done=function(){b.textContent='Copied!';setTimeout(function(){b.textContent='Copy PayPal Link';},2000);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){});}
+    else{var i=document.createElement('input');i.value=t;document.body.appendChild(i);i.select();try{document.execCommand('copy');done();}catch(e){}document.body.removeChild(i);}
+  });
+})();
+</script>
 
 
 <!-- CONTACT -->
