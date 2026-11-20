@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#211438">
 <title>Giving &amp; Partnership | Apostle Imani Ministries</title>
-<meta name="description" content="Partner with Apostle Imani Ministries through bank, mobile money and PayPal giving options in Tanzania and internationally.">
+<meta name="description" content="Partner with Apostle Imani Ministries through bank, mobile money, PayPal and crypto (USDT and Bitcoin) giving options in Tanzania and internationally.">
 <meta property="og:title" content="Giving &amp; Partnership | Apostle Imani Ministries">
 <meta property="og:description" content="Partner with Apostle Imani Ministries through mobile money, bank transfer and international giving.">
 <meta property="og:type" content="website">
@@ -628,6 +628,9 @@ footer .copyright {
 .payment-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:22px; }
 .payment-card{ background:white; border-radius:15px; padding:26px; box-shadow:var(--shadow); border-bottom:4px solid var(--gold); display:flex; flex-direction:column; }
 .payment-card img{ height:64px; width:170px; max-width:100%; object-fit:contain; object-position:left center; margin-bottom:14px; }
+.payment-card img.pay-qr{width:200px;height:auto;object-fit:contain;max-width:100%;border:1px solid var(--border);border-radius:12px;margin:14px 0 4px;background:#fff;display:block}
+.pay-addr{font-family:monospace;font-size:13.5px;background:var(--cream);border:1px solid var(--border);border-radius:10px;padding:10px 12px;overflow-wrap:anywhere;color:var(--text);margin:6px 0 10px}
+.pay-warn{font-size:13px;color:#8a1f1f}
 .payment-card h3{ color:var(--purple); font-size:19px; margin-bottom:12px; }
 .payment-card p{ color:var(--muted); font-size:15px; margin:0 0 6px; overflow-wrap:anywhere; }
 .payment-card p strong{ color:var(--text); }
@@ -859,11 +862,40 @@ footer .copyright {
         <button onclick="copyText('https://www.paypal.me/JuliusMushi',this)">Copy PayPal Link</button>
       </article>
 
+      <!-- USDT (BNB SMART CHAIN) -->
+      <article class="payment-card">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div style="background:#26a17b;color:#fff;border-radius:40px;padding:8px 20px;font-weight:bold;font-size:20px;letter-spacing:.5px">USDT</div>
+          <img src="images/payments/binance.png" alt="Binance" style="height:26px;width:auto;max-width:none;margin:0;object-fit:contain">
+        </div>
+        <h3>Crypto: USDT (BNB Smart Chain, BEP-20)</h3>
+        <p><strong>Wallet:</strong> Binance (Ministry Donations)</p>
+        <div class="pay-addr" id="usdt-address">0xF349e60d15fC15E57B0e9404feb55D57b67A45C7</div>
+        <p class="pay-warn"><strong>Send only USDT on the BNB Smart Chain (BEP-20) network.</strong> Assets sent on any other network may be lost permanently.</p>
+        <img class="pay-qr" src="images/usdt-bep20-qr.png" alt="QR code for the USDT BNB Smart Chain (BEP-20) donation address" loading="lazy">
+        <button onclick="copyText('0xF349e60d15fC15E57B0e9404feb55D57b67A45C7',this)">Copy Address</button>
+      </article>
+
+      <!-- BITCOIN (TRUST WALLET) -->
+      <article class="payment-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+          <img src="images/payments/bitcoin.png" alt="Bitcoin" style="height:56px;width:56px;margin:0;object-fit:contain">
+          <img src="images/payments/trust-wallet.png" alt="Trust Wallet" style="height:56px;width:56px;margin:0;object-fit:contain">
+        </div>
+        <h3>Bitcoin (BTC, Bitcoin network)</h3>
+        <p><strong>Wallet:</strong> Trust Wallet</p>
+        <div class="pay-addr" id="btc-address">bc1qnjeq9q2s68wzz05d7zzdhfn262eqydl4636g37</div>
+        <p class="pay-warn"><strong>Send only Bitcoin (BTC) on the Bitcoin network.</strong> Other assets or networks may be lost permanently.</p>
+        <img class="pay-qr" src="images/btc-qr.png" alt="QR code for the Bitcoin (BTC) donation address" loading="lazy">
+        <button onclick="copyText('bc1qnjeq9q2s68wzz05d7zzdhfn262eqydl4636g37',this)">Copy Address</button>
+      </article>
+
       <article class="payment-card">
         <img src="images/payments/gcash.png" alt="GCash">
         <h3>GCash (Philippines)</h3>
         <p><strong>Registered Name:</strong> Julius Constantine Mushi</p>
         <p><strong>Number:</strong> +639667536305</p>
+        <img class="pay-qr" src="images/gcash-qr.png" alt="GCash InstaPay QR code for Julius Constantine Mushi" loading="lazy">
         <button onclick="copyText('+639667536305',this)">Copy Number</button>
       </article>
 
